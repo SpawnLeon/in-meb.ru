@@ -1,0 +1,26 @@
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+@import 'fonts';
+@import 'includes/reset';
+@import 'includes/vars';
+
+@import "common";
+
+@import 'includes/buttons';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/breadcrumbs';
+@import 'includes/sidebar';
+@import 'includes/pagination';
+
+//pages
+@import 'views/index';
+@import 'views/forms';
+@import 'views/catalog';
+@import 'views/category';
+@import 'views/product';
+@import 'views/about';
+@import 'views/contacts';
+
+
+

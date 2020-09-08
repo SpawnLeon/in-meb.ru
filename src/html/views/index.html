@@ -1,0 +1,84 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="main-page">
+  <div class="main-page__slider main-slider">
+    slider here...
+  </div>
+  <section class="main-page__collections collections-block">
+    <div class="main-page__title collections-block__title">Коллекции></div>
+    <div class="collections-block__inner">
+      <div class="collections-block__item item-collection item-collection--big">
+        <div class="item-collection__title item-collection__title--big">Серия Верди</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/1.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Паола</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/2.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Авиньон</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/3.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Милана</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/4.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Бали</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/5.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия OKAERI</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/6.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия LIRONA</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/7.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия LAURA</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/8.jpg"
+               alt="">
+        </div>
+      </div>
+      <div class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Мальта</div>
+        <div class="item-collection__title__image">
+          <img src="/uploads/collections/9.jpg"
+               alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
