@@ -1,0 +1,425 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+<!--  сделать шрифты локальными-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
+<body>
+<div class="page">
+  <header class="header">
+
+    <div class="header__row header__row header__row--top">
+      <div class="container header__container header__container--top">
+        <nav class="header__main-menu-nav">
+          <ul class="main-menu list--clear">
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">О компании</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Доставка и оплата</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Материалы</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Наши работы</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <button type="button"
+                class="header__call-order call-order">Заказать звонок или написать нам
+        </button>
+      </div>
+
+    </div>
+    <div class="header__row header__row header__row--middle">
+      <div class="container header__container header__container--middle">
+        <a href=""
+           class="header__logo logo">
+          <svg class="logo__image"
+               width="228"
+               height="40">
+            <use xlink:href="img/spritemap.svg#sprite-logo"></use>
+          </svg>
+          <span class="logo__text">Экологичная мебель из натурального дерева</span>
+        </a>
+        <div class="header__search search-block">
+          <div class="search-block__form">
+            <input type="text"
+                   placeholder="Что Вы ищете?"
+                   class="search-block__field">
+            <button type="button"
+                    class="search-block__btn">
+              <svg class="search-block__image"
+                   width="24"
+                   height="24">
+                <use xlink:href="img/spritemap.svg#sprite-search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__phones phones-block">
+          <a href="tel:+79991234567"
+             class="phones-block__item">
+            <span>8 (999)</span> 123-45-67
+          </a>
+          <a href="tel:+79991234567"
+             class="phones-block__item">
+            <span>8 (999)</span> 123-45-67
+          </a>
+        </div>
+        <div class="header__personal-block personal-block">
+          <a href=""
+             class="personal-block__item item-personal-block">
+
+            <div class="item-personal-block__image">
+              <div class="item-personal-block__count">0</div>
+              <svg class=""
+                   width="32"
+                   height="28">
+                <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+              </svg>
+            </div>
+
+            <span class="item-personal-block__title">Понравилось</span>
+          </a>
+          <a href=""
+             class="personal-block__item item-personal-block">
+
+            <div class="item-personal-block__image">
+              <div class="item-personal-block__count">0</div>
+              <svg class=""
+                   width="36"
+                   height="32">
+                <use xlink:href="img/spritemap.svg#sprite-basket"></use>
+              </svg>
+            </div>
+
+            <span class="item-personal-block__title">Корзина</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="header__row header__row header__row--bottom">
+      <div class="container header__container header__container--middle">
+        <nav class="header__catalog-menu-nav">
+          <ul class="catalog-menu list--clear">
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Спальные комплекты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Гостинные</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Прихожие</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Столы и стулья</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Кровати</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Матрасы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Комоды</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Тумбы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link">Кухни</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href=""
+                 class="catalog-menu__link catalog-menu__link--sale">РАСПРОДАЖА</a>
+            </li>
+            <li class="catalog-menu__item">
+              <button type="button"
+                      class="catalog-menu__btn">
+
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <div class="page-content">
+        <div class="container">
+
+
+
+<div class="main-page">
+  <div class="main-page__slider main-slider">
+
+
+    <div class="swiper-container main-slider__container">
+      <div class="swiper-wrapper main-slider__wrapper">
+
+        <div class="swiper-slide main-slider__slide">
+          <img src="uploads/main-slider/1.jpg"
+               alt="">
+        </div>
+
+        <div class="swiper-slide main-slider__slide">
+          <img src="uploads/main-slider/1.jpg"
+               alt="">
+        </div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination main-slider__pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev main-slider__btn main-slider__btn--prev"></div>
+      <div class="swiper-button-next main-slider__btn main-slider__btn--next"></div>
+    </div>
+
+
+  </div>
+  <section class="main-page__collections collections-block">
+    <div class="block__title  collections-block__title">Коллекции</div>
+    <div class="collections-block__inner">
+      <a href=""
+         class="collections-block__item item-collection item-collection--big">
+        <div class="item-collection__title item-collection__title--big">Серия Верди</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/1.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Паола</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/2.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Авиньон</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/3.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Милана</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/4.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Бали</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/5.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия OKAERI</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/6.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия LIRONA</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/7.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия LAURA</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/8.jpg"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="collections-block__item item-collection item-collection">
+        <div class="item-collection__title item-collection__title">Серия Мальта</div>
+        <div class="item-collection__image">
+          <img src="/uploads/collections/9.jpg"
+               alt="">
+        </div>
+      </a>
+    </div>
+    <a href=""
+       class="collections-block__more">
+      <svg
+           width="22"
+           height="22">
+        <use xlink:href="img/spritemap.svg#sprite-collections-block-more"></use>
+      </svg>
+      Все коллекции ></a>
+  </section>
+
+  <section class="main-page__popular-categories popular-categories-block">
+    <div class="block__title popular-categories-block__title">Популярные разделы</div>
+
+
+    <div class="popular-categories-block__inner">
+      <a href=""
+         class="popular-categories-block__item item-category">
+        <div class="item-category__title">Кровати</div>
+        <div class="item-category__image">
+          <img src="uploads/categories/1.png"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="popular-categories-block__item item-category">
+        <div class="item-category__title">Шкафы</div>
+        <div class="item-category__image">
+          <img src="uploads/categories/2.png"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="popular-categories-block__item item-category">
+        <div class="item-category__title">Комоды</div>
+        <div class="item-category__image">
+          <img src="uploads/categories/3.png"
+               alt="">
+        </div>
+      </a>
+      <a href=""
+         class="popular-categories-block__item item-category">
+        <div class="item-category__title">Матрасы</div>
+        <div class="item-category__image">
+          <img src="uploads/categories/4.png"
+               alt="">
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="main-page__hits hits-block">
+    <div class="block__title hits-block__title">Хиты продаж></div>
+    <div class="hits-block__inner">
+      <div class="hits-block__item item-product">
+        <div class="item-product__stickers stickers">
+          <div class="stickers__item item-sticker item-sticker--new">NEW</div>
+        </div>
+        <a href=""
+           class="item-product__image">
+          <img src="uploads/products/1.png "
+               alt="">
+        </a>
+        <a href=""
+           class="item-product__title">Кровать двуспальная Лондон</a>
+        <div class="item-product__prices">
+          <div class="item-product__price item-product__price--old">20 368 ₽</div>
+          <div class="item-product__price"><span>от</span> 10 368 ₽</div>
+        </div>
+        <div class="item-product__actions">
+          <button type="button"
+                  class="btn btn--fill item-product__add">В корзину
+          </button>
+        </div>
+        <footer class="item-product__material-prices material-prices">
+          <div class="material-prices__row">
+            <div class="material-prices__col material-prices__col--header">Материал</div>
+            <div class="material-prices__col material-prices__col--header">Цена</div>
+          </div>
+          <div class="material-prices__row">
+            <div class="material-prices__col">
+              <img src=""
+                   alt=""
+                   class="material-prices__icon">
+              Сосна
+            </div>
+            <div class="material-prices__col">10 368 ₽</div>
+          </div>
+          <div class="material-prices__row">
+            <div class="material-prices__col">
+              <img src=""
+                   alt=""
+                   class="material-prices__icon">
+              Берёза
+            </div>
+            <div class="material-prices__col">15 368 ₽</div>
+          </div>
+          <div class="material-prices__row">
+            <div class="material-prices__col">
+              <img src=""
+                   alt=""
+                   class="material-prices__icon">
+              Бук
+            </div>
+            <div class="material-prices__col">20 368 ₽</div>
+          </div>
+          <div class="material-prices__row">
+            <div class="material-prices__col">
+              <img src=""
+                   alt=""
+                   class="material-prices__icon">
+              Дуб
+            </div>
+            <div class="material-prices__col">25 368 ₽</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+  <div class="main-page__banner">
+    <img src="uploads/main-page/1.png"
+         alt="">
+  </div>
+
+</div>
+
+
+</div><!-- /.container -->
+
+
+</div> <!-- /.page-content -->
+<footer class="page__footer footer">
+  <div class="container">
+
+  </div>
+  </div>
+
+</footer>
+</div><!-- /.page -->
+
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
+
