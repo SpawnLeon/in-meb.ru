@@ -78,7 +78,7 @@
   align-items : center;
   // .main-menu__item
   &__item {
-    margin: 0 20px 0 0;
+    margin : 0 20px 0 0;
   }
 
   // .main-menu__link
@@ -158,9 +158,10 @@
     font-size       : 18px;
     font-weight     : bold;
     line-height     : 22px;
+    display         : block;
     text-decoration : none;
     color           : #161616;
-    display : block;
+
     > span {
       color : #00cc52;
     }
@@ -168,7 +169,7 @@
 }
 
 .personal-block {
-  display : flex;
+  display     : flex;
   align-items : flex-end;
 
 
@@ -178,9 +179,9 @@
 }
 
 .item-personal-block {
-  position : relative;
-  margin-left : 15px;
-  text-align : center;
+  position        : relative;
+  margin-left     : 15px;
+  text-align      : center;
   text-decoration : none;
 
 
@@ -189,6 +190,8 @@
     font-size        : 16px;
     font-weight      : 600;
     position         : absolute;
+    top              : -5px;
+    left             : 50%;
     display          : flex;
     align-items      : center;
     justify-content  : center;
@@ -197,31 +200,29 @@
     color            : #fff;
     border-radius    : 50%;
     background-color : #feb618;
-    top : -5px;
-    left : 50%;
 
   }
 
   // .item-personal-block__image
   &__image {
-    position : relative;
-    width : 36px;
-    height : 32px;
-    display : flex;
-    margin: 0 auto;
-    align-items : center;
+    position        : relative;
+    display         : flex;
+    align-items     : center;
     justify-content : center;
+    width           : 36px;
+    height          : 32px;
+    margin          : 0 auto;
   }
 
   // .item-personal-block__title
   &__title {
     font-size      : 12px;
     font-weight    : bold;
+    display        : block;
     padding-top    : 1px;
     text-align     : center;
     letter-spacing : -0.015em;
     color          : #161616;
-    display : block;
 
   }
 }
@@ -231,15 +232,33 @@
   align-items : center;
   // .catalog-menu__item
   &__item {
+    margin : 0 15px 0 0 ;
+
+
+    &:last-child {
+      margin-right : 0;
+    }
   }
 
   // .catalog-menu__link
   &__link {
-    color : #fff;
+    font-size       : 14px;
+    font-weight     : bold;
+    line-height     : 1.2142;
+    text-decoration : none;
+    color           : #fff;
+
 
     // .catalog-menu__link--sale
     &--sale {
       font-weight : 900;
+      margin-right : 22px;
+      margin-left : 22px;
+    }
+
+    // .catalog-menu__link--more
+    &--more {
+
     }
   }
 

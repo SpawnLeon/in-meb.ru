@@ -26,17 +26,26 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // products slider
-  new Swiper('.products-slider__container', {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
-    // Navigation arrows
-    navigation: {
-      prevEl: '.products-slider__btn--prev',
-      nextEl: '.products-slider__btn--next',
-    },
-  });
+  // products sliders
+  document.querySelectorAll('.products-slider__container').
+    forEach(function(el) {
+
+      const prevEl = el.closest('.products-slider').
+        querySelector('.products-slider__btn--prev');
+      const nextEl = el.closest('.products-slider').
+        querySelector('.products-slider__btn--next');
+      new Swiper(el, {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        // Navigation arrows
+        navigation: {
+          prevEl,
+          nextEl,
+        },
+      });
+    });
+
 });
 
 
