@@ -11,17 +11,20 @@
 
     // .header__container--top
     &--top {
-
+      padding-top    : 10px;
+      padding-bottom : 10px;
     }
 
     // .header__container--middle
-    &--top {
-
+    &--middle {
+      padding-top    : 15px;
+      padding-bottom : 15px;
     }
 
     // .header__container--bottom
-    &--top {
-
+    &--bottom {
+      padding-top    : 19px;
+      padding-bottom : 19px;
     }
   }
 
@@ -40,11 +43,13 @@
     // .header__row--bottom
     &--bottom {
       background-color : #00cc52;
+
     }
   }
 
   // .header__main-menu-nav
   &__main-menu-nav {
+
   }
 
   // .header__call-order
@@ -69,6 +74,10 @@
 
   // .header__catalog-menu-nav
   &__catalog-menu-nav {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    width           : 100%;
   }
 }
 
@@ -149,6 +158,19 @@
 
   // .search-block__image
   &__image {
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity : 1; /* Firefox */
+    color   : #9d9d9d;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color : #9d9d9d;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color : #9d9d9d;
   }
 }
 
@@ -232,7 +254,7 @@
   align-items : center;
   // .catalog-menu__item
   &__item {
-    margin : 0 15px 0 0 ;
+    margin : 0 18px 0 0;
 
 
     &:last-child {
@@ -248,21 +270,108 @@
     text-decoration : none;
     color           : #fff;
 
-
-    // .catalog-menu__link--sale
-    &--sale {
-      font-weight : 900;
-      margin-right : 22px;
-      margin-left : 22px;
-    }
-
-    // .catalog-menu__link--more
-    &--more {
-
+    // .catalog-menu__link--active
+    &--active,
+    &:active,
+    &:focus,
+    &:hover {
+      color : #feb618;
     }
   }
 
-  // .catalog-menu__btn
-  &__btn {
+
+}
+
+
+.header {
+  // .header__sale-btn
+  &__sale-btn {
+  }
+
+  // .header__sale-menu
+  &__sale-menu {
+  }
+}
+
+.menu-sale-btn {
+  font-size           : 14px;
+  font-weight         : 900;
+  line-height         : 1.2142;
+  position            : relative;
+  display             : inline-block;
+  height              : 20px;
+  padding-right       : 40px;
+  text-transform      : uppercase;
+  color               : #fff;
+  background-image    : url(../../img/svg/burger.svg);
+  background-repeat   : no-repeat;
+  background-position : right center;
+  background-size     : 20px 14px;
+
+  // .menu-sale-btn--show
+  &--show {
+    background-image : url(../../img/svg/burger-open.svg);
+    background-size  : 20px 20px;
+  }
+
+
+}
+
+.sale-menu {
+  display : none;
+
+  // .sale-menu--shown
+  &--show {
+    display : block;
+  }
+
+  // .sale-menu__item
+  &__item {
+  }
+
+  // .sale-menu__link
+  &__link {
+    font-size       : 16px;
+    font-weight     : 800;
+    line-height     : 1.25;
+    text-decoration : none;
+    text-transform  : uppercase;
+    color           : #fff;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color : #feb618;
+    }
+  }
+
+  // .sale-menu__icon
+  &__icon {
+  }
+
+  // .sale-menu__sub
+  &__sub {
+  }
+}
+
+.sale-sub-menu {
+  // .sale-sub-menu__item
+  &__item {
+  }
+
+  // .sale-sub-menu__link
+  &__link {
+
+    font-size       : 14px;
+    font-weight     : 500;
+    line-height     : 1.2142;
+    text-decoration : none;
+    color           : #fff;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color : #feb618;
+    }
   }
 }

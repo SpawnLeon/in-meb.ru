@@ -46,6 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+  const toggleSaleMenuBtn = document.querySelector(
+    '[ data-js="toggle-sale-menu"]');
+  if (toggleSaleMenuBtn) {
+    toggleSaleMenuBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      this.classList.toggle('menu-sale-btn--show');
+    });
+  }
+
 });
 
 

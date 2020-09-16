@@ -23,14 +23,10 @@ title: "Заголовок | Проект",
         </div>
       </div>
 
-      <!-- If we need pagination -->
-      <div class="swiper-pagination main-slider__pagination"></div>
-      <!-- If we need navigation buttons -->
       <div class="swiper-button-prev main-slider__btn main-slider__btn--prev"></div>
       <div class="swiper-button-next main-slider__btn main-slider__btn--next"></div>
     </div>
-
-
+    <div class="swiper-pagination main-slider__pagination"></div>
   </div>
   <section class="main-page__collections collections-block">
     <h2 class="block__title  collections-block__title">Коллекции</h2>
@@ -458,14 +454,14 @@ title: "Заголовок | Проект",
          alt="">
   </div>
 
-  <section class="main-page__hits hits-block">
-    <h2 class="block__title hits-block__title">Новинки</h2>
-    <div class="products-slider products-slider--hits">
+  <section class="main-page__new new-block">
+    <h2 class="block__title new-block__title">Новинки</h2>
+    <div class="products-slider products-slider--new">
       <div class="swiper-container products-slider__container">
         <div class="swiper-wrapper products-slider__wrapper">
 
           <div class="swiper-slide products-slider__slide">
-            <div class="item-product ">
+            <div class="item-product">
               <div class="item-product__stickers stickers">
                 <div class="stickers__item item-sticker item-sticker--new">NEW</div>
               </div>
@@ -795,6 +791,8 @@ title: "Заголовок | Проект",
       </div>
     </div>
   </section>
+
+
   <section class="main-page__about about-block">
     <div class="about-block__inner">
       <div class="about-block__img">
@@ -817,11 +815,43 @@ title: "Заголовок | Проект",
   </section>
   <section class="main-page__reviews reviews-block">
     <h2 class="reviews-block__title block__title">Отзывы</h2>
+    <div class="reviews-block__inner">
+      <div class="reviews-block__item item-review">
+        <div class="item-review__header">
+          <a href=""
+             class="item-review__product item-product-review">
+            <div class="item-product-review__image">
+              <img src="uploads/products/1.png "
+                   alt="">
+            </div>
+            <div class="item-product-review__add">
+              <h3 class="item-product-review__title">Кровать двуспальная Лондон</h3>
+              <div class="item-product-review__prices">
+                <div class="item-product-review__price item-product-review__price--old">
+                  20 368 ₽
+                </div>
+                <div class="item-product-review__price"><span>от</span> 10 368 ₽</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item-review__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus,  id dignissim arcu. Integer aliquet arcu a dignissim mollis.
+        </div>
+        <div class="item-review__author">
+          Алексей Н.
+        </div>
+      </div>
+    </div>
+    <a href=""
+       class="reviews-block__more">Отзывы ></a>
   </section>
+
+
   <section class="main-page__works works-block">
     <h2 class="reviews-block__title block__title">Наши работы</h2>
     <a href=""
-       class="reviews-block__more">Все работы</a>
+       class="works-block__more">Все работы</a>
     <div class="works-block__inner">
       <a href=""
          class="works-block__item">
@@ -854,6 +884,32 @@ title: "Заголовок | Проект",
              alt="">
       </a>
     </div>
+  </section>
+
+  <section class="main-page__questions-form questions-form-block">
+    <div class="questions-form-block__inner">
+      <div class="questions-form-block__info">
+        <div class="questions-form-block__title">
+          Остались вопросы?
+        </div>
+        <div class="questions-form-block__text">
+          Воспользуйтесь формой заказа обратного звонка
+          или задайте вопрос в чате нашему специалисту. Мы будем рады вам помочь!
+        </div>
+      </div>
+      <div class="questions-form-block__form questions-form">
+        <div class="questions-form__inner">
+          <input type="text"
+                 placeholder="Ваш номер телефона"
+                 class="questions-form__field">
+          <button type="button" class="questions-form__btn">Позвоните мне!</button>
+          <div class="questions-form__agree">
+            Здесь согласие)))
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </div>
 
