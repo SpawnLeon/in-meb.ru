@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.main-slider__pagination',
     },
-    // Navigation arrows
     navigation: {
       prevEl: '.main-slider__btn--prev',
       nextEl: '.main-slider__btn--next',
@@ -38,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 30,
-        // Navigation arrows
         navigation: {
           prevEl,
           nextEl,
@@ -46,10 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  const toggleSaleMenuBtn = document.querySelector(
-    '[ data-js="toggle-sale-menu"]');
-  if (toggleSaleMenuBtn) {
-    toggleSaleMenuBtn.addEventListener('click', function(event) {
+  //reviews block slider
+  new Swiper('.reviews-block__container', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 15,
+    navigation: {
+      prevEl: '.reviews-block__btn--prev',
+      nextEl: '.reviews-block__btn--next',
+    },
+  });
+
+  const toggleBigCatalogMenuBtn = document.querySelector(
+    '[ data-js="toggle-big-catalog-menu"]');
+  if (toggleBigCatalogMenuBtn) {
+    toggleBigCatalogMenuBtn.addEventListener('click', function(event) {
       event.preventDefault();
       this.classList.toggle('menu-sale-btn--show');
     });
