@@ -54,6 +54,13 @@
     margin-top : 65px;
   }
 
+  // .main-page__questions-form
+  &__questions-form {
+    width       : 100vw;
+    margin-left : calc((100vw - #{$contentWidth}) / -2);
+  }
+
+
 }
 
 .collections-block {
@@ -399,8 +406,8 @@
   &__text {
     font-family : 'Lato', sans-serif;
     font-size   : 16px;
+    margin-top  : 38px;
     color       : #454545;
-    margin-top : 38px;
   }
 
   // .item-review__author
@@ -408,8 +415,8 @@
     font-size   : 14px;
     font-weight : 600;
     line-height : 1.2142;
+    margin-top  : 15px;
     color       : #161616;
-    margin-top : 15px;
   }
 }
 
@@ -461,5 +468,95 @@
       text-decoration-line : line-through;
 
     }
+  }
+}
+
+
+.questions-form-block {
+  background-color : #00cc52;
+
+
+  // .questions-form-block__inner
+  &__inner {
+    display             : flex;
+    max-width           : $contentWidth;
+    margin              : 0 auto;
+    padding             : 35px 0;
+    background-image    : url(../../img/svg/questions-form.svg);
+    background-repeat   : no-repeat;
+    background-position : right bottom;
+
+  }
+
+  // .questions-form-block__info
+  &__info {
+  }
+
+  // .questions-form-block__title
+  &__title {
+    font-size   : 30px;
+    font-weight : bold;
+    line-height : 1.2333;
+    color       : #fff;
+  }
+
+  // .questions-form-block__text
+  &__text {
+    font-family : 'Lato', sans-serif;
+    font-size   : 16px;
+    color       : rgba(255, 255, 255, 0.95);
+
+  }
+
+  // .questions-form-block__form
+  &__form {
+  }
+}
+
+.questions-form {
+
+  // .questions-form__inner
+  &__inner {
+    display : flex;
+  }
+
+  // .questions-form__field
+  &__field {
+    font-size        : 14px;
+    font-weight      : 600;
+    line-height      : 1.2142;
+    min-width        : 280px;
+    padding          : 11px 15px 12px;
+    border-radius    : 3px;
+    background-color : #f8f8f8;
+  }
+
+  // .questions-form__btn
+  &__btn {
+    font-size     : 14px;
+    font-weight   : bold;
+    line-height   : 1.2142;
+    padding       : 11px 15px 12px;
+    color         : #fff;
+    border-radius : 5px;
+    background    : #feb618;
+  }
+
+  // .questions-form__agree
+  &__agree {
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity : 1; /* Firefox */
+    color   : #9d9d9d;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color : #9d9d9d;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color : #9d9d9d;
   }
 }
