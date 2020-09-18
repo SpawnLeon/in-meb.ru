@@ -127,6 +127,7 @@ a {
   vertical-align : bottom;
   border         : 1px solid #b3b3b3;
   border-radius  : 50%;
+  cursor : pointer;
 }
 
 .swiper-pagination-bullet-active {
@@ -206,6 +207,13 @@ a {
     background-image    : url(../img/pages/main/bg.png);
     background-repeat   : no-repeat;
     background-position : 0 360px;
+  }
+  // .page-content__title
+  &__title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2133;
+    color: #161616;
   }
 }
 

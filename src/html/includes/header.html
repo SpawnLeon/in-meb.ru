@@ -37,9 +37,19 @@
                  class="main-menu__link">Контакты</a></li>
           </ul>
         </nav>
-        <button type="button"
-                class="header__call-order call-order">Заказать звонок или написать нам
-        </button>
+        <div class="header__call-forms">
+          <button type="button"
+                  class="header__call-order call-order">
+            Заказать звонок
+          </button>
+          или
+          <button type="button"
+                  class="header__call-order call-order">
+            написать нам
+          </button>
+        </div>
+
+
       </div>
 
     </div>
@@ -56,17 +66,20 @@
         </a>
         <div class="header__search search-block">
           <div class="search-block__form">
-            <input type="text"
-                   placeholder="Что Вы ищете?"
-                   class="search-block__field">
-            <button type="button"
-                    class="search-block__btn">
-              <svg class="search-block__image"
-                   width="24"
-                   height="24">
-                <use xlink:href="img/spritemap.svg#sprite-search"></use>
-              </svg>
-            </button>
+            <form action="">
+              <input type="text"
+                     placeholder="Что Вы ищете?"
+                     class="search-block__field">
+              <button type="button"
+                      class="search-block__btn">
+                <svg class="search-block__image"
+                     width="24"
+                     height="24">
+                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
+                </svg>
+              </button>
+            </form>
+
           </div>
         </div>
         <div class="header__phones phones-block">
@@ -159,149 +172,234 @@
 
           </ul>
 
-          <button type="button" data-js="toggle-big-catalog-menu"
+          <button type="button"
+                  data-js="toggle-big-catalog-menu"
                   class="header__sale-btn menu-sale-btn"><span></span></button>
-          <div class="header__big-catalog-menu-wrapper">
-            <ul class="header__big-catalog-menu big-catalog-menu list--clear">
-              <li class="big-catalog-menu__item">
-                <a href=""
-                   class="big-catalog-menu__link">
 
-                  <svg class="big-catalog-menu__icon"
-                       width="20"
-                       height="20">
-                    <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
-                  </svg>
-                  Коллекции
-                </a>
-                <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Верди</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Элбург</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Паола</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Венето</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Британия</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Милана</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LAURA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Мальта</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Бали</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="header__big-catalog-menu big-catalog-menu list--clear">
-              <li class="big-catalog-menu__item">
-                <a href=""
-                   class="big-catalog-menu__link">
+          <div class="header__big-catalog-menu-wrapper"
+               data-js="big-catalog-menu">
 
-                  <svg class="big-catalog-menu__icon"
-                       width="20"
-                       height="20">
-                    <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
-                  </svg>
-                  Коллекции
-                </a>
-                <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Верди</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Элбург</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Паола</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Венето</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Британия</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Милана</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LAURA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Мальта</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Бали</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="header__big-catalog-menu big-catalog-menu list--clear">
-              <li class="big-catalog-menu__item">
-                <a href=""
-                   class="big-catalog-menu__link">
+            <div class="header__big-catalog-menu">
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
 
-                  <svg class="big-catalog-menu__icon"
-                       width="20"
-                       height="20">
-                    <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
-                  </svg>
-                  Коллекции
-                </a>
-                <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Верди</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Элбург</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Паола</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Венето</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Британия</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Милана</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LAURA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Мальта</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Бали</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="header__big-catalog-menu big-catalog-menu list--clear">
-              <li class="big-catalog-menu__item">
-                <a href=""
-                   class="big-catalog-menu__link">
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
+                    </svg>
+                    Коллекции
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Верди</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Элбург</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Паола</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Венето</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Британия</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Милана</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия LAURA</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Мальта</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Бали</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
 
-                  <svg class="big-catalog-menu__icon"
-                       width="20"
-                       height="20">
-                    <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
-                  </svg>
-                  Коллекции
-                </a>
-                <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Верди</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Элбург</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Паола</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Венето</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Британия</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Милана</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LAURA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Мальта</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Бали</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="header__big-catalog-menu big-catalog-menu list--clear">
-              <li class="big-catalog-menu__item">
-                <a href=""
-                   class="big-catalog-menu__link">
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-2"></use>
+                    </svg>
+                    КРОВАТИ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Односпальные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Полуторные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двуспальные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С подъемным механизмом</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двухъярусные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Детские</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С 3 спинками</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Тахта</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Кованные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Диваны-кровати</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С мягким изголовьем</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С мягким изголовьем</a>
+                    </li>
 
-                  <svg class="big-catalog-menu__icon"
-                       width="20"
-                       height="20">
-                    <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
-                  </svg>
-                  Коллекции
-                </a>
-                <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Верди</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Элбург</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Паола</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Венето</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Британия</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Милана</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия LAURA</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Мальта</a></li>
-                  <li class="big-catalog-sub-menu__item"><a href="" class="big-catalog-sub-menu__link">Серия Бали</a></li>
-                </ul>
-              </li>
-            </ul>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-3"></use>
+                    </svg>
+                    ШКАФЫ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Одностворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двухстворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Трехстворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Четырехстворчатые</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Угловые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Книжные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Купе</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серванты</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Буфеты</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-4"></use>
+                    </svg>
+                    ГОСТИНЫЕ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Шкафы для прихожей</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Вешалки</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Обувницы</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    ПРИХОЖИЕ
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    Письменные столы
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    Обеденные столы
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    стулья
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    КОМПЛЕКТЫ ДЛЯ СПАЛЬНИ
+                  </a>
+                </li>
+              </ul>
+
+
+            </div>
+
+
           </div>
 
 

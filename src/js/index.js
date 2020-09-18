@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     pagination: {
       el: '.main-slider__pagination',
+      clickable: true,
     },
     navigation: {
       prevEl: '.main-slider__btn--prev',
@@ -61,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleBigCatalogMenuBtn.addEventListener('click', function(event) {
       event.preventDefault();
       this.classList.toggle('menu-sale-btn--show');
+
+      const bigCatalogMenu = document.querySelector('[data-js="big-catalog-menu"]');
+      if(bigCatalogMenu) {
+        bigCatalogMenu.classList.toggle('show');
+      }
     });
   }
 

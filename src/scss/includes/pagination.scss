@@ -1,0 +1,33 @@
+.pagination-block {
+  display         : flex;
+  justify-content : center;
+  // .pagination-block__item
+  &__item {
+    font-size       : 18px;
+    font-weight     : 500;
+    line-height     : 1;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 34px;
+    height          : 34px;
+    padding         : 5px;
+    color           : #454545;
+    border-radius   : 50%;
+    text-decoration : none;
+
+    &:hover {
+      color : #00cc52;
+    }
+
+    // .pagination-block__item--current
+    &--current {
+      color            : #fff;
+      background-color : #00cc52;
+
+      &:hover {
+        color : #fff;
+      }
+    }
+  }
+}
