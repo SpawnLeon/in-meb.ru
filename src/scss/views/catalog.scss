@@ -119,6 +119,7 @@
 
 .item-sticker {
   // .item-sticker--new
+  font-family     : $secondaryFontFamily;
   display         : flex;
   align-items     : center;
   justify-content : center;
@@ -126,7 +127,6 @@
   height          : 55px;
   color           : #fff;
   border-radius   : 50%;
-  font-family : $secondaryFontFamily;
 
   &--new {
     background-color : #f20000;
@@ -180,9 +180,9 @@
 
   // .material-prices__icon
   &__icon {
-    margin-right : 8px;
-    display : inline-block;
-    vertical-align: bottom;
+    display        : inline-block;
+    margin-right   : 8px;
+    vertical-align : bottom;
   }
 }
 
@@ -198,7 +198,49 @@
 
   // .product-list__item
   &__item {
-    flex : 0 1 calc(100% / 4 - 30px);
-    margin : 0 15px 30px ;
+    flex   : 0 1 calc(100% / 4 - 30px);
+    margin : 0 15px 30px;
+  }
+}
+
+
+.categories {
+  display   : flex;
+  flex-wrap : wrap;
+  margin    : 0 -15px;
+
+  // .categories__item
+  &__item {
+    flex   : calc(100% / 4 - 30px);
+    margin : 0 15px 30px;
+  }
+}
+
+.item-category {
+  position         : relative;
+  display          : inline-block;
+  height           : 175px;
+  padding          : 25px 20px;
+  text-decoration  : none;
+  border-radius    : 10px;
+  background-color : #f9f9f9;
+  box-shadow       : 0 33px 80px rgba(120, 120, 120, 0.07), 0 4.13211px 10.0172px rgba(120, 120, 120, 0.035);
+
+  // .item-category__title
+  &__title {
+    font-size   : 24px;
+    font-weight : bold;
+    line-height : 1.3881;
+    position    : relative;
+    z-index     : 1;
+    color       : #161616;
+
+  }
+
+  // .item-category__image
+  &__image {
+    position : absolute;
+    right    : 0;
+    bottom   : 0;
   }
 }
