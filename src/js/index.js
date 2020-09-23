@@ -56,6 +56,30 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+
+  // product slider
+  const galleryThumbs = new Swiper('.images-product-thumbs__container', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+    slidesPerColumnFill: 'column',
+  });
+  const galleryTop = new Swiper('.images-product__container', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+
+
+
   const toggleBigCatalogMenuBtn = document.querySelector(
     '[ data-js="toggle-big-catalog-menu"]');
   if (toggleBigCatalogMenuBtn) {

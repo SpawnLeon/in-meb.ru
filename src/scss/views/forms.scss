@@ -1,0 +1,126 @@
+.form {
+  position : relative;
+  padding  : 50px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+
+  // .form__close
+  &__close {
+    position : absolute;
+    top      : 20px;
+    right    : 20px;
+  }
+
+  // .form__inner
+  &__inner {
+  }
+
+  // .form__title
+  &__title {
+    font-size   : 30px;
+    font-weight : 800;
+    line-height : 1.2333;
+    text-align  : center;
+    color       : #161616;
+  }
+
+  // .form__fields
+  &__fields {
+    margin-top : 30px;
+  }
+
+  // .form__field
+  &__field {
+    margin-bottom :  22px;
+  }
+
+  // .form-close__description
+  &__description {
+
+    font-family : 'Lato', sans-serif;
+    font-size   : 16px;
+    line-height : 1.6;
+    margin-top  : 10px;
+    text-align  : center;
+    color       : #454545;
+  }
+
+  // .form__actions
+  &__actions {
+    display : flex;
+    justify-content : center;
+  }
+}
+
+.form-close {
+
+}
+
+.item-field {
+  // .item-field--captcha
+  &--captcha {
+  }
+
+  // .item-field--agree
+  &--agree {
+    a {
+      color : inherit;
+    }
+  }
+
+  // .item-field__label
+  &__label {
+    // .item-field__label--checkbox
+    &--checkbox {
+    }
+  }
+
+  // .item-field__title
+  &__title {
+    font-family   : 'Lato', sans-serif;
+    font-size     : 16px;
+    font-weight   : 500;
+    font-style    : normal;
+    line-height   : 1.1875;
+    display       : block;
+    margin-bottom : 11px;
+
+    /* Paragraph Color */
+
+    color         : #454545;
+
+    // .item-field__name--checkbox
+    &--checkbox {
+      display : inline-block;
+    }
+  }
+
+  // .item-field__field
+  &__field {
+
+
+    // .item-field__field--text
+    &--text {
+      width            : 100%;
+      padding          : 14px 25px 15px;
+      border           : 2px solid #ccc;
+      border-radius    : 3px;
+      background-color : #fff;
+    }
+
+    // .item-field__field--textarea
+    &--textarea {
+      width            : 100%;
+      padding          : 14px 25px 15px;
+      border           : 2px solid #ccc;
+      border-radius    : 3px;
+      background-color : #fff;
+    }
+
+    // .item-field__field--checkbox
+    &--checkbox {
+    }
+  }
+
+
+}

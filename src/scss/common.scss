@@ -260,7 +260,7 @@ a {
   // .questions-form-block--wide
   &--wide {
     width       : 100vw;
-    margin-left : calc((100vw - #{$contentWidth}) / -2);
+    margin-left : calc((100vw - #{$contentWidth} + 30px) / -2);
   }
 
 
