@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-
   // product slider
   const galleryThumbs = new Swiper('.images-product-thumbs__container', {
     spaceBetween: 10,
@@ -64,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    direction: 'vertical',
-    slidesPerColumnFill: 'column',
   });
   const galleryTop = new Swiper('.images-product__container', {
     spaceBetween: 10,
@@ -78,8 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-
-
   const toggleBigCatalogMenuBtn = document.querySelector(
     '[ data-js="toggle-big-catalog-menu"]');
   if (toggleBigCatalogMenuBtn) {
@@ -87,12 +82,29 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       this.classList.toggle('menu-sale-btn--show');
 
-      const bigCatalogMenu = document.querySelector('[data-js="big-catalog-menu"]');
-      if(bigCatalogMenu) {
+      const bigCatalogMenu = document.querySelector(
+        '[data-js="big-catalog-menu"]');
+      if (bigCatalogMenu) {
         bigCatalogMenu.classList.toggle('show');
       }
     });
   }
+
+  //custom tabs
+  document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelectorAll('[data-tab]').forEach((el, i) => {
+        el.hidden = true;
+      });
+
+      const target = this.dataset.tabTarget;
+      const targetTab = document.querySelector(`[data-tab="${target}"]`);
+      if (targetTab) {
+        targetTab.hidden = false;
+      }
+    });
+  });
 
 });
 

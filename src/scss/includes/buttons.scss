@@ -23,15 +23,16 @@ button {
 }
 
 .btn {
-  font-size     : 14px;
-  font-weight   : bold;
-  font-style    : normal;
-  line-height   : 1.2142;
-  padding       : 10px 15px;
-  transition    : all 0.3s;
-  text-align    : center;
-  border        : 1px solid #00cc52;
-  border-radius : 5px;
+  font-size       : 14px;
+  font-weight     : bold;
+  font-style      : normal;
+  line-height     : 1.2142;
+  padding         : 10px 15px;
+  transition      : all 0.3s;
+  text-align      : center;
+  text-decoration : none;
+  border          : 1px solid #00cc52;
+  border-radius   : 5px;
 
 
   &:hover,
