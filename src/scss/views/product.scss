@@ -4,6 +4,10 @@
     margin-top : 80px;
   }
 
+  // .product__tabs
+  &__tabs {
+  }
+
 }
 
 .order-delivery-product {
@@ -416,3 +420,28 @@
 
 
 
+
+
+.tabs {
+  // .tabs__header
+  &__header {
+    display : flex;
+  }
+  // .tabs__item
+  &__tab {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2083;
+    color: #161616;
+    cursor : pointer;
+    margin-right : 50px;
+
+  }
+  // .tabs__contents
+  &__contents {
+    margin-top : 43px;
+  }
+  // .tabs__content
+  &__content {
+  }
+}

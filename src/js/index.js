@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //custom tabs
   document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('clickq', function(event) {
       event.preventDefault();
       document.querySelectorAll('[data-tab]').forEach((el, i) => {
         el.hidden = true;
