@@ -8,6 +8,16 @@
   &__tabs {
   }
 
+  // .product__buy-with
+  &__buy-with {
+    margin-top : 80px;
+  }
+
+  // .product__viewed
+  &__viewed {
+    margin-top : 80px;
+  }
+
 }
 
 .order-delivery-product {
@@ -87,6 +97,9 @@
 
 .images-product-thumbs {
   margin-top : 20px;
+  position : relative;
+  padding-right: 50px;
+  padding-left : 50px;
 
   // .images-product-thumbs__container
   &__container {
@@ -106,12 +119,17 @@
 
   // .images-product-thumbs__btn
   &__btn {
+    top : 50%;
+    margin-top : -18px;
+
     // .images-product-thumbs__btn--prev
     &--prev {
+      left : 0;
     }
 
     // .images-product-thumbs__btn--next
     &--next {
+      right : 0;
     }
   }
 }
@@ -203,6 +221,18 @@
 
   // .info-product__props
   &__props {
+  }
+
+  // .info-product__characteristics
+  &__characteristics {
+  }
+
+  // .info-product__delivery
+  &__delivery {
+  }
+
+  // .info-product__reviews
+  &__reviews {
   }
 }
 
@@ -419,29 +449,208 @@
 }
 
 
-
-
-
 .tabs {
   // .tabs__header
   &__header {
     display : flex;
   }
-  // .tabs__item
+
+  // .tabs__tab
   &__tab {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.2083;
-    color: #161616;
-    cursor : pointer;
+    font-size    : 24px;
+    font-weight  : bold;
+    line-height  : 1.2083;
+    position     : relative;
     margin-right : 50px;
+    cursor       : pointer;
+    color        : #161616;
+
+    // .tabs__tab--active
+    &--active {
+
+      &::after {
+        content          : '';
+        position         : absolute;
+        bottom           : -3px;
+        display          : block;
+        width            : 100%;
+        height           : 3px;
+        border-radius    : 1px;
+        background-color : #00cc52;
+
+      }
+    }
+
 
   }
+
   // .tabs__contents
   &__contents {
     margin-top : 43px;
   }
+
   // .tabs__content
   &__content {
   }
 }
+
+
+.characteristics-product {
+  display   : flex;
+  flex-wrap : wrap;
+
+  // .characteristics-product__item
+  &__item {
+    flex : 1 1 30%;
+  }
+}
+
+.item-characteristics {
+  font-family : 'Lato', sans-serif;
+  font-size   : 16px;
+  line-height : 1.6;
+  color       : #454545;
+
+  // .item-characteristics__title
+  &__title {
+    font-weight : 600;
+    line-height : 1.25;
+    color       : #161616;
+  }
+
+  // .item-characteristics__items
+  &__items {
+
+    margin-top : 6px;
+  }
+}
+
+
+.delivery-product {
+  // .delivery-product__item
+  &__item {
+    margin-bottom : 35px;
+
+    &:last-child {
+      margin-bottom : 0;
+    }
+  }
+}
+
+.item-delivery-product {
+  // .item-delivery-product__inner
+  &__inner {
+    display     : flex;
+    align-items : flex-start;
+  }
+
+  // .item-delivery-product__image
+  &__image {
+    flex         : 0 0 auto;
+    margin-right : 30px;
+  }
+
+  // .item-delivery-product__text
+  &__text {
+
+    p {
+      margin : 30px 0;
+    }
+
+    ul {
+      margin : 5px 0;
+
+      li {
+        margin : 5px 0;
+      }
+    }
+  }
+}
+
+
+.reviews-product {
+  // .reviews-product__inner
+  &__inner {
+    display : flex;
+  }
+
+  // .reviews-product__items
+  &__items {
+    flex         : 1 1 635px;
+    margin-right : 25px;
+  }
+
+  // .reviews-product__item
+  &__item {
+
+    &:not(:last-child) {
+      border-bottom : 1px solid #81e7aa;
+      padding-bottom : 20px;
+      margin-bottom : 20px;
+    }
+  }
+
+  // .reviews-product__form
+  &__form {
+    flex : 0 1 450px;
+  }
+}
+
+.item-review-product {
+  // .item-review-product__header
+  &__header {
+  }
+
+  // .item-review-product__author
+  &__author {
+    font-size   : 14px;
+    font-weight : 600;
+    line-height : 1.2142;
+    color       : #161616;
+    display : flex;
+    align-items : center;
+
+    > svg {
+      margin-right : 8px;
+      flex-shrink : 0;
+    }
+  }
+
+  // .item-review-product__text
+  &__text {
+    font-family : 'Lato', sans-serif;
+    font-size   : 16px;
+    line-height : 1.6;
+    color       : #454545;
+    margin-top : 15px;
+  }
+}
+
+.form-review {
+}
+
+.item-field {
+  // .item-field--captcha
+  &--captcha {
+  }
+
+  // .item-field__label
+  &__label {
+  }
+
+  // .item-field__title
+  &__title {
+  }
+
+  // .item-field__field
+  &__field {
+    // .item-field__field--text
+    &--text {
+    }
+
+    // .item-field__field--textarea
+    &--textarea {
+    }
+  }
+}
+

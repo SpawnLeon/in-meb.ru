@@ -28,18 +28,20 @@ button {
   font-style      : normal;
   line-height     : 1.2142;
   padding         : 10px 15px;
+  cursor : pointer;
   transition      : all 0.3s;
   text-align      : center;
   text-decoration : none;
+  color           : #00cc52;
   border          : 1px solid #00cc52;
-  border-radius   : 5px;
+  border-radius   : 3px;
 
 
   &:hover,
   &:active,
   &:focus {
-    color            : #000;
-    background-color : transparent;
+    color            : #fff;
+    background-color : #00cc52;
 
   }
 
@@ -57,7 +59,8 @@ button {
     &:hover,
     &:active,
     &:focus {
-      color : #00cc52;
+      color            : #00cc52;
+      background-color : transparent;
 
     }
   }

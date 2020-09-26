@@ -92,11 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //custom tabs
   document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
-    el.addEventListener('clickq', function(event) {
+    el.addEventListener('click', function(event) {
       event.preventDefault();
       document.querySelectorAll('[data-tab]').forEach((el, i) => {
         el.hidden = true;
       });
+      document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
+        el.classList.remove('tabs__tab--active');
+      });
+      this.classList.add('tabs__tab--active');
 
       const target = this.dataset.tabTarget;
       const targetTab = document.querySelector(`[data-tab="${target}"]`);
