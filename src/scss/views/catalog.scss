@@ -234,8 +234,10 @@
 
   // .product-list__item
   &__item {
-    flex   : 0 1 calc(100% / 3 - 30px);
+    flex   : 0 1 255px;;
     margin : 0 15px 30px;
+    max-width : 255px;
+    width : 100%;
   }
 }
 

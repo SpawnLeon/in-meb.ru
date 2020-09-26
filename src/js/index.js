@@ -91,22 +91,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   //custom tabs
-  document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
-    el.addEventListener('click', function(event) {
-      event.preventDefault();
-      document.querySelectorAll('[data-tab]').forEach((el, i) => {
-        el.hidden = true;
-      });
-      document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
-        el.classList.remove('active');
-      });
-      this.classList.add('active');
+  document.querySelectorAll('[data-is-tab]').forEach((tab) => {
+    tab.querySelectorAll('[data-tab-target]').forEach((el, i) => {
+      el.addEventListener('click', function(event) {
+        event.preventDefault();
+        tab.querySelectorAll('[data-tab]').forEach((el, i) => {
+          el.hidden = true;
+        });
+        tab.querySelectorAll('[data-tab-target]').forEach((el, i) => {
+          el.classList.remove('active');
+        });
+        this.classList.add('active');
 
-      const target = this.dataset.tabTarget;
-      const targetTab = document.querySelector(`[data-tab="${target}"]`);
-      if (targetTab) {
-        targetTab.hidden = false;
-      }
+        const target = this.dataset.tabTarget;
+        const targetTab = tab.querySelector(`[data-tab="${target}"]`);
+        if (targetTab) {
+          targetTab.hidden = false;
+        }
+      });
     });
   });
 

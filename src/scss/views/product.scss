@@ -18,6 +18,37 @@
     margin-top : 80px;
   }
 
+  // .product__inner
+  &__inner {
+    display : flex;
+  }
+
+  // .product__images
+  &__images {
+    flex      : 0 0 538px;
+    max-width : 538px;
+  }
+
+  // .product__info
+  &__info {
+    flex        : 0 0 540px;
+    margin-left : 30px;
+  }
+
+  // .product__footer
+  &__footer {
+    margin-top : 60px;
+  }
+
+  // .product__chip-exp
+  &__chip-exp {
+  }
+
+  // .product__questions-form
+  &__questions-form {
+    margin-top : 80px;
+  }
+
 }
 
 .order-delivery-product {
@@ -67,30 +98,6 @@
   }
 }
 
-
-.product {
-  // .product__inner
-  &__inner {
-    display : flex;
-  }
-
-  // .product__images
-  &__images {
-    flex      : 0 0 538px;
-    max-width : 538px;
-  }
-
-  // .product__info
-  &__info {
-    flex        : 0 0 540px;
-    margin-left : 30px;
-  }
-
-  // .product__footer
-  &__footer {
-    margin-top : 60px;
-  }
-}
 
 .images-product-wrapper {
 }
@@ -657,3 +664,47 @@
   }
 }
 
+
+.product {
+
+}
+
+.cheap-exp-block {
+  // .cheap-exp-block__tabs
+  &__tabs {
+  }
+
+  // .cheap-exp-block__header
+  &__header {
+    display : flex;
+  }
+
+  // .cheap-exp-block__tab
+  &__tab {
+    font-size     : 24px;
+    font-weight   : 600;
+    line-height   : 1.2083;
+    text-align    : center;
+    color         : #161616;
+    border-bottom : 3px solid #d8d8d8;
+    width : 50%;
+    padding-bottom : 10px;
+    cursor : pointer;
+
+
+    // .cheap-exp-block__tab.active
+    &.active {
+      border-color : #00cc52;
+
+    }
+  }
+
+  // .cheap-exp-block__contents
+  &__contents {
+    margin-top : 40px;
+  }
+
+  // .cheap-exp-block__content
+  &__content {
+  }
+}
