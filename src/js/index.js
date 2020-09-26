@@ -98,9 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
         el.hidden = true;
       });
       document.querySelectorAll('[data-tab-target]').forEach((el, i) => {
-        el.classList.remove('tabs__tab--active');
+        el.classList.remove('active');
       });
-      this.classList.add('tabs__tab--active');
+      this.classList.add('active');
 
       const target = this.dataset.tabTarget;
       const targetTab = document.querySelector(`[data-tab="${target}"]`);
