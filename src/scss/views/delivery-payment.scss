@@ -22,6 +22,10 @@
   // .delivery-payment-block__item
   &__item {
     margin-bottom : 55px;
+
+    &:last-child {
+      margin-bottom : 0;
+    }
   }
 }
 

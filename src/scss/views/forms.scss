@@ -1,8 +1,13 @@
 .form {
-  position : relative;
-  padding  : 50px;
-  background-color: #F8F8F8;
-  border-radius: 10px;
+  position         : relative;
+  padding          : 50px;
+  border-radius    : 10px;
+  background-color : #f8f8f8;
+
+  // .form-contacts
+  &--contacts {
+    padding : 0;
+  }
 
   // .form__close
   &__close {
@@ -31,7 +36,7 @@
 
   // .form__field
   &__field {
-    margin-bottom :  22px;
+    margin-bottom : 22px;
   }
 
   // .form-close__description
@@ -47,8 +52,13 @@
 
   // .form__actions
   &__actions {
-    display : flex;
+    display         : flex;
     justify-content : center;
+
+    // .form__actions--left
+    &--left {
+      justify-content : flex-start;
+    }
   }
 }
 
