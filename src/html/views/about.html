@@ -3,14 +3,24 @@ title: "Заголовок | Проект",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-
 <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
 
-
-<div class="page-content__about about-page">
-
-
+<h1 class="page-content__title page-content__title--about">О компании</h1>
+<div class="about">
+  <div class="about__inner">
+    <div class="about__img">
+      <img src="uploads/about/1.jpg"
+           alt="">
+    </div>
+    <div class="about__content">
+      <div class="about__title">
+        Мебельный магазин «Интерьер»
+      </div>
+      <div class="about__text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer aliquet arcu a dignissim mollis. Donec arcu turpis, pellentesque eu porta eget, fermentum sagittis eros. Praesent id quam nec eros mollis tristique eu cursus nulla. Suspendisse potenti. Vivamus tincidunt ligula ex, vel auctor turpis ornare quis. Sed imperdiet interdum posuere.</p>
+        <p>Cras id diam ac mauris vulputate finibus ut a nibh. Aliquam facilisis mauris ut tincidunt gravida. Praesent volutpat eros at elit imperdiet cursus. Quisque ac rhoncus tortor. Maecenas pulvinar pellentesque ligula vel dapibus.</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-<%= _.template(require('./../includes/footer.html'). default)(data) %>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

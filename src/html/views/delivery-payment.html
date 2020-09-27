@@ -1,0 +1,178 @@
+<% var data = {
+title: "Заголовок | Проект",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+
+
+<div class="delivery-payment">
+  <div class="delivery-payment__inner has-sidebar">
+
+    <aside class="delivery-payment__sidebar sidebar">
+      <div class="sidebar__block">
+
+        <div class="sidebar__title">Доставка<br>и оплата</div>
+        <ul class="sidebar__menu menu-sidebar list--clear">
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 1 - Заказ</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 2 - Подтверждение и производство</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 3 - Доставка</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 4 - Оплата</a>
+          </li>
+        </ul>
+
+
+      </div>
+
+
+    </aside>
+
+    <div class="delivery-payment__content">
+      <h1 class="page-content__title">Информация о доставке</h1>
+      <div class="delivery-payment-block">
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 1 - Заказ</div>
+          <div class="item-delivery-payment__desc">
+            Для оформления заявок и заказов мы предлагаем клиентам сразу несколько простых и удобных способов связи:
+          </div>
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-1"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Телефонный звонок. Менеджеры всегда рады предоставить необходимые сведения и принять заказ по номеру:
+              <span class="item-delivery-payment__phone">8 (999) 123-45-67</span>, прием заказов по телефону выполняется с 9.00 до 21.00.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-2"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Онлайн-заявка. Просто положите выбранный товар в корзину и заполните строку с контактными данными. Менеджер перезвонит в самое ближайшее время (не более получаса).
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-3"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Онлайн-консультант. Просто воспользуйтесь специальной всплывающей формой, чтобы отправить свой вопрос или заявку.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-4"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Электронная почта. Наш e-mail: example@gmail.com принимает почту круглосуточно. Не забывайте указывать в отправлениях контактную информацию (телефон для связи). Мы обязательно перезвоним.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-5"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Обратный звонок. Заполните форму обратного звонка расположенного в верхней части сайта
+            </div>
+          </div>
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 2 - Подтверждение и производство</div>
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/4.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Стандартная продукция изготавливается в срок до 10 рабочих дней в зависимости от объемов и сложности заказа.
+                <br>
+                Нестандартная, сложная по форме, украшенная резьбой или ковкой продукция изготавливается в срок до 14 рабочих дней.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 3 - Доставка</div>
+
+
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/1.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Время доставки согласовывается с клиентом. За 1 час перед доставкой Вам позвонит курьер и предупредит о доставке.</p>
+              <p>Стоимость доставки по Москве в пределах МКАД - 500 рублей.</p>
+              <p>За МКАД или Подмосковье - 500 рублей +30 рублей за километр.</p>
+              <p>Доставка мебели осуществляется до подъезда. При необходимости подъёма мебели дополнительно от 100 до 300 рублей за этаж в зависимости от объёма мебели. Подъём на лифте 350 рублей.</p>
+              <p>Доставка в регионы России осуществляется при помощи наших партнёров транспортных компаний ТК “Деловые линии”, ТК “ПЭК”, ТК “КИТ”.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 4 - Оплата</div>
+
+
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/2.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Мы используем безопасный способ оплаты заказов. Клиент оплачивает заказанную мебель после получения и осмотра.</p>
+
+              Оплатить можно: <br>
+              <ul>
+                <li>Наличными денежными средствами курьеру.</li>
+                <li> Банковской картой Visa, MasterCard, Мир. У наших курьеров всегда с собой терминал оплаты.</li>
+              </ul>
+
+              <p>
+                После оплаты клиенту передаются комплект документов, товарная накладная с указанным сроком гарантии.
+              </p>
+              <p>
+                <img src="img/item-delivery-product/3.jpg"
+                     alt="">
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

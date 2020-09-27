@@ -1,0 +1,806 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <!--  сделать шрифты локальными-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+  <title>Document</title>
+
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
+<body>
+<div class="page">
+  <header class="header">
+
+    <div class="header__row header__row header__row--top">
+      <div class="container header__container header__container--top">
+        <nav class="header__main-menu-nav">
+          <ul class="main-menu list--clear">
+            <li class="main-menu__item">
+              <a href="about.html"
+                 class="main-menu__link">О компании</a></li>
+            <li class="main-menu__item">
+              <a href="delivery-payment.html"
+                 class="main-menu__link">Доставка и оплата</a></li>
+            <li class="main-menu__item">
+              <a href="materials.html"
+                 class="main-menu__link">Материалы</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Наши работы</a></li>
+            <li class="main-menu__item">
+              <a href=""
+                 class="main-menu__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__call-forms">
+          <button type="button"
+                  class="header__call-order call-order">
+            Заказать звонок
+          </button>
+          или
+          <button type="button"
+                  class="header__call-order call-order">
+            написать нам
+          </button>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="header__row header__row header__row--middle">
+      <div class="container header__container header__container--middle">
+        <a href=""
+           class="header__logo logo">
+          <svg class="logo__image"
+               width="228"
+               height="51">
+            <use xlink:href="img/spritemap.svg#sprite-logo"></use>
+          </svg>
+          <span class="logo__text">Экологичная мебель из натурального дерева</span>
+        </a>
+        <div class="header__search search-block">
+          <div class="search-block__form">
+            <form action="">
+              <input type="text"
+                     placeholder="Что Вы ищете?"
+                     class="search-block__field">
+              <button type="button"
+                      class="search-block__btn">
+                <svg class="search-block__image"
+                     width="24"
+                     height="24">
+                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
+                </svg>
+              </button>
+            </form>
+
+          </div>
+        </div>
+        <div class="header__phones phones-block">
+          <a href="tel:+ё74993488391"
+             class="phones-block__item">
+            <span>8 (499)</span> 348-83-91
+          </a>
+          <a href="tel:+74993488391"
+             class="phones-block__item">
+            <span>8 (499)</span> 348-83-91
+          </a>
+        </div>
+        <div class="header__personal-block personal-block">
+          <a href=""
+             class="personal-block__item item-personal-block">
+
+            <div class="item-personal-block__image">
+              <div class="item-personal-block__count">0</div>
+              <svg class=""
+                   width="32"
+                   height="28">
+                <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
+              </svg>
+            </div>
+
+            <span class="item-personal-block__title">Понравилось</span>
+          </a>
+          <a href=""
+             class="personal-block__item item-personal-block">
+
+            <div class="item-personal-block__image">
+              <div class="item-personal-block__count">0</div>
+              <svg class=""
+                   width="36"
+                   height="32">
+                <use xlink:href="img/spritemap.svg#sprite-basket"></use>
+              </svg>
+            </div>
+
+            <span class="item-personal-block__title">Корзина</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="header__row header__row header__row--bottom">
+      <div class="container header__container header__container--middle">
+        <nav class="header__catalog-menu-nav">
+          <ul class="catalog-menu list--clear">
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Спальные комплекты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Гостинные</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Прихожие</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Столы и стулья</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Кровати</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Матрасы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Комоды</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Тумбы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link">Кухни</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html"
+                 class="catalog-menu__link catalog-menu__link--sale">Распродажа</a>
+            </li>
+
+          </ul>
+
+          <button type="button"
+                  data-js="toggle-big-catalog-menu"
+                  class="header__sale-btn menu-sale-btn"><span></span></button>
+
+          <div class="header__big-catalog-menu-wrapper"
+               data-js="big-catalog-menu">
+
+            <div class="header__big-catalog-menu">
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-1"></use>
+                    </svg>
+                    Коллекции
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Верди</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Элбург</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Паола</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Авиньон</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Венето</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Британия</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Милана</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия OKAERI</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия LIRONA</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия LAURA</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Мальта</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серия Бали</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-2"></use>
+                    </svg>
+                    КРОВАТИ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Односпальные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Полуторные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двуспальные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С подъемным механизмом</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двухъярусные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Детские</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С 3 спинками</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Тахта</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Кованные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Диваны-кровати</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С мягким изголовьем</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">С мягким изголовьем</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-3"></use>
+                    </svg>
+                    ШКАФЫ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Одностворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Двухстворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Трехстворчатые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Четырехстворчатые</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Угловые</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Книжные</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Купе</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Серванты</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Буфеты</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-4"></use>
+                    </svg>
+                    ГОСТИНЫЕ
+                  </a>
+                  <ul class="big-catalog-menu__sub big-catalog-sub-menu list--clear">
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Шкафы для прихожей</a>
+                    </li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Вешалки</a></li>
+                    <li class="big-catalog-sub-menu__item"><a href=""
+                                                              class="big-catalog-sub-menu__link">Обувницы</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    ПРИХОЖИЕ
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    Письменные столы
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    Обеденные столы
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    стулья
+                  </a>
+                </li>
+              </ul>
+              <ul class="big-catalog-menu list--clear">
+                <li class="big-catalog-menu__item">
+                  <a href=""
+                     class="big-catalog-menu__link">
+
+                    <svg class="big-catalog-menu__icon"
+                         width="20"
+                         height="20">
+                      <use xlink:href="img/spritemap.svg#sprite-big-catalog-menu-5"></use>
+                    </svg>
+                    КОМПЛЕКТЫ ДЛЯ СПАЛЬНИ
+                  </a>
+                </li>
+              </ul>
+
+
+            </div>
+
+
+          </div>
+
+
+        </nav>
+      </div>
+
+    </div>
+
+
+  </header>
+  <!--  page-content--front-page - this class only front page-->
+  <div class="page-content page-content--front-page">
+    <div class="container">
+
+
+<ul class="breadcrumbs list--clear"
+    itemscope
+    itemtype="http://schema.org/BreadcrumbList">
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Главная</span>
+    </a>
+    <meta itemprop="position"
+          content="1" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter">/</span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Каталог</span>
+    </a>
+    <meta itemprop="position"
+          content="2" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter">/</span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Кровати</span>
+    </a>
+    <meta itemprop="position"
+          content="3" />
+  </li>
+</ul>
+
+
+
+<div class="delivery-payment">
+  <div class="delivery-payment__inner has-sidebar">
+
+    <aside class="delivery-payment__sidebar sidebar">
+      <div class="sidebar__block">
+
+        <div class="sidebar__title">Доставка<br>и оплата</div>
+        <ul class="sidebar__menu menu-sidebar list--clear">
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 1 - Заказ</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 2 - Подтверждение и производство</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 3 - Доставка</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шаг 4 - Оплата</a>
+          </li>
+        </ul>
+
+
+      </div>
+
+
+    </aside>
+
+    <div class="delivery-payment__content">
+      <h1 class="page-content__title">Информация о доставке</h1>
+      <div class="delivery-payment-block">
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 1 - Заказ</div>
+          <div class="item-delivery-payment__desc">
+            Для оформления заявок и заказов мы предлагаем клиентам сразу несколько простых и удобных способов связи:
+          </div>
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-1"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Телефонный звонок. Менеджеры всегда рады предоставить необходимые сведения и принять заказ по номеру:
+              <span class="item-delivery-payment__phone">8 (999) 123-45-67</span>, прием заказов по телефону выполняется с 9.00 до 21.00.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-2"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Онлайн-заявка. Просто положите выбранный товар в корзину и заполните строку с контактными данными. Менеджер перезвонит в самое ближайшее время (не более получаса).
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-3"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Онлайн-консультант. Просто воспользуйтесь специальной всплывающей формой, чтобы отправить свой вопрос или заявку.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-4"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Электронная почта. Наш e-mail: example@gmail.com принимает почту круглосуточно. Не забывайте указывать в отправлениях контактную информацию (телефон для связи). Мы обязательно перезвоним.
+            </div>
+
+            <div class="item-delivery-payment__icon">
+              <svg
+                width="40"
+                height="40">
+                <use xlink:href="img/spritemap.svg#sprite-delivery-payment-5"></use>
+              </svg>
+            </div>
+            <div class="item-delivery-payment__text-icon">
+              Обратный звонок. Заполните форму обратного звонка расположенного в верхней части сайта
+            </div>
+          </div>
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 2 - Подтверждение и производство</div>
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/4.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Стандартная продукция изготавливается в срок до 10 рабочих дней в зависимости от объемов и сложности заказа.
+                <br>
+                Нестандартная, сложная по форме, украшенная резьбой или ковкой продукция изготавливается в срок до 14 рабочих дней.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 3 - Доставка</div>
+
+
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/1.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Время доставки согласовывается с клиентом. За 1 час перед доставкой Вам позвонит курьер и предупредит о доставке.</p>
+              <p>Стоимость доставки по Москве в пределах МКАД - 500 рублей.</p>
+              <p>За МКАД или Подмосковье - 500 рублей +30 рублей за километр.</p>
+              <p>Доставка мебели осуществляется до подъезда. При необходимости подъёма мебели дополнительно от 100 до 300 рублей за этаж в зависимости от объёма мебели. Подъём на лифте 350 рублей.</p>
+              <p>Доставка в регионы России осуществляется при помощи наших партнёров транспортных компаний ТК “Деловые линии”, ТК “ПЭК”, ТК “КИТ”.</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="delivery-payment-block__item item-delivery-payment">
+          <div class="item-delivery-payment__title">Шаг 4 - Оплата</div>
+
+
+          <div class="item-delivery-payment__inner">
+            <div class="item-delivery-payment__image">
+              <img src="img/item-delivery-product/2.jpg"
+                   alt="">
+            </div>
+            <div class="item-delivery-payment__text">
+              <p>Мы используем безопасный способ оплаты заказов. Клиент оплачивает заказанную мебель после получения и осмотра.</p>
+
+              Оплатить можно: <br>
+              <ul>
+                <li>Наличными денежными средствами курьеру.</li>
+                <li> Банковской картой Visa, MasterCard, Мир. У наших курьеров всегда с собой терминал оплаты.</li>
+              </ul>
+
+              <p>
+                После оплаты клиенту передаются комплект документов, товарная накладная с указанным сроком гарантии.
+              </p>
+              <p>
+                <img src="img/item-delivery-product/3.jpg"
+                     alt="">
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- /.container -->
+</div> <!-- /.page-content -->
+<footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__menus">
+      <div class="footer__menu block-footer-menu">
+        <div class="block-footer-menu__title">
+          Коллекции мебели
+        </div>
+        <ul class="block-footer-menu__menu footer-menu list--clear">
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Верди</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Элбург</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Паола</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Венето</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Британия</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Милана</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия LIRONA</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия LAURA</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Мальта</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Авиньон</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия OKAERI</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Серия Бали</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu block-footer-menu">
+        <div class="block-footer-menu__title">
+          Каталог
+        </div>
+        <ul class="block-footer-menu__menu footer-menu footer-menu--catalog list--clear">
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Спальные комплекты</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Гостинные</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Прихожие</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Столы и стулья</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Кровати</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Матрасы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Комоды</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Тумбы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Кухни</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu block-footer-menu">
+        <div class="block-footer-menu__title">
+          Покупателям
+        </div>
+        <ul class="block-footer-menu__menu footer-menu footer-menu--customer list--clear">
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">О компании</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Материалы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Доставка и оплата</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href=""
+               class="footer-menu__link">Контакты</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer__main ">
+      <a href=""
+         class="footer__logo logo">
+        <svg class="logo__image"
+             width="228"
+             height="51">
+          <use xlink:href="img/spritemap.svg#sprite-logo-2"></use>
+        </svg>
+      </a>
+      <div class="footer__contacts">
+        <div class="footer__phones phones-footer">
+          <a href="tel:+74993488391"
+             class="phones-footer__item">
+            <span>8 (499)</span> 348-83-91
+          </a>
+          <a href="tel:+74993488391"
+             class="phones-footer__item">
+            <span>8 (499)</span> 348-83-91
+          </a>
+          <a href="mailto:example@gmail.com "
+             class="footer__mail">example@gmail.com</a>
+          <div class="footer__dev">
+            Разработка сайта - <a href="https://craftsol.ru">craftsol</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__oferta">
+        Информация, представленная на сайте носит информационный характер и не является публичной офертой. Работая с этим сайтом, вы даете свое согласие на использование файлов cookie.
+      </div>
+      <div class="footer__copy">
+        2005 - 2020 &copy; Интернет-магазин "Интерьер". <br>
+        Все права защищены.
+      </div>
+    </div>
+
+  </div>
+
+
+</footer>
+</div><!-- /.page -->
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
+

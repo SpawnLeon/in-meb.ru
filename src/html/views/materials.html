@@ -1,0 +1,116 @@
+<% var data = {
+title: "Заголовок | Проект",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+
+
+<div class="materials">
+  <div class="materials__inner has-sidebar">
+
+    <aside class="materials__sidebar sidebar">
+      <div class="sidebar__block">
+        <div class="sidebar__title">Материалы</div>
+        <ul class="sidebar__menu menu-sidebar list--clear">
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты цветов</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты браширования</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты эко-кожи</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты узора</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты фасадов</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты патины узора</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты ручек</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты ножек</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты тканей</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Варианты обивки</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+
+    </aside>
+
+    <div class="materials__content">
+      <h1 class="page-content__title">Варианты цветов</h1>
+      <div class="materials-block">
+        <div class="materials-block__inner">
+          <div class="materials-block__item item-material">
+            <a href="" data-fancybox="" class="item-material__image">
+              <img src="uploads/materials/1.jpg"
+                   alt="">
+            </a>
+            <div class="item-material__title">Цвет не выбран</div>
+            <div class="item-material__price">Без доплаты</div>
+          </div>
+          <div class="materials-block__item item-material">
+            <a href="" data-fancybox="" class="item-material__image">
+              <img src="uploads/materials/2.jpg"
+                   alt="">
+            </a>
+            <div class="item-material__title">Прозрачный лак</div>
+            <div class="item-material__price">+20%</div>
+          </div>
+          <div class="materials-block__item item-material">
+            <a href="" data-fancybox="" class="item-material__image">
+              <img src="uploads/materials/3.jpg"
+                   alt="">
+            </a>
+            <div class="item-material__title">Классический орех-1</div>
+            <div class="item-material__price">Без доплаты</div>
+          </div>
+          <div class="materials-block__item item-material">
+            <a href="" data-fancybox="" class="item-material__image">
+              <img src="uploads/materials/4.jpg"
+                   alt="">
+            </a>
+            <div class="item-material__title">Классический орех-2</div>
+            <div class="item-material__price">+1 500 руб.</div>
+          </div>
+          <div class="materials-block__item item-material">
+            <a href="" data-fancybox="" class="item-material__image">
+              <img src="uploads/materials/5.jpg"
+                   alt="">
+            </a>
+            <div class="item-material__title">Классический орех-3</div>
+            <div class="item-material__price">Без доплаты</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

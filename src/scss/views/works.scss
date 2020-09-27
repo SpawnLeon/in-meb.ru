@@ -1,0 +1,33 @@
+.works-page {
+  // .works-page__inner
+  &__inner {
+  }
+
+  // .works-page__sidebar
+  &__sidebar {
+  }
+
+  // .works-page__content
+  &__content {
+  }
+}
+
+.works-page-block {
+  // .works-page-block__inner
+  &__inner {
+    display : flex;
+    margin : 0 -15px;
+    flex-wrap: wrap;
+  }
+
+  // .works-page-block__item
+  &__item {
+    margin : 0 15px 30px;
+  }
+}
+
+.item-material {
+  // .item-material__image
+  &__image {
+  }
+}

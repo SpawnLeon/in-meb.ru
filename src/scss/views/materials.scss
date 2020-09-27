@@ -1,0 +1,50 @@
+.materials {
+  // .materials__inner
+  &__inner {
+  }
+
+  // .materials__sidebar
+  &__sidebar {
+  }
+
+  // .materials__content
+  &__content {
+  }
+}
+
+.materials-block {
+  // .materials-block__inner
+  &__inner {
+    display : flex;
+    margin : 0 -15px;
+    flex-wrap: wrap;
+  }
+
+  // .materials-block__item
+  &__item {
+    margin : 0 15px 30px;
+  }
+}
+
+.item-material {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #161616;
+
+  // .item-material__image
+  &__image {
+    margin-bottom : 15px;
+    display: block;
+  }
+
+  // .item-material__title
+  &__title {
+    font-weight : 700;
+  }
+
+  // .item-material__price
+  &__price {
+  }
+}

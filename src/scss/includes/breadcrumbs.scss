@@ -1,10 +1,13 @@
 .breadcrumbs {
   display : flex;
+  margin : 30px 0 30px;
+
   // .breadcrumbs__item
   &__item {
     font-size   : 14px;
     font-weight : 600;
     line-height : 1.2142;
+    margin : 0;
 
 
     &:last-child .breadcrumbs__link {

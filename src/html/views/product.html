@@ -4,12 +4,10 @@ title: "Заголовок | Проект",
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
 
-<div class="container__inner">
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
 
-  <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
-
-
-  <div class="page-content__product product">
+<div class="product">
+  <div class="page-content__product ">
     <div class="product__inner">
 
       <div class="product__images images-product-wrapper">
@@ -261,7 +259,6 @@ title: "Заголовок | Проект",
     </div>
 
   </div>
-
   <div class="product__footer">
     <div class="product__tabs tabs-product"
          data-is-tab>
@@ -1598,7 +1595,6 @@ title: "Заголовок | Проект",
       <div class="swiper-button-next products-slider__btn products-slider__btn--next"></div>
     </div>
   </section>
-
 </div>
 
 

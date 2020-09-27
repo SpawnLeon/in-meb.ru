@@ -1,0 +1,105 @@
+<% var data = {
+title: "Заголовок | Проект",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+
+
+<div class="works-page">
+  <div class="works-page__inner has-sidebar">
+
+    <aside class="works-page__sidebar sidebar">
+      <div class="sidebar__block">
+        <div class="sidebar__title">Наши работы</div>
+        <ul class="sidebar__menu menu-sidebar list--clear">
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Шкафы</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Спальни</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Дачная мебель</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Комоды</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Кухни</a>
+          </li>
+          <li class="menu-sidebar__item">
+            <a href=""
+               class="menu-sidebar__link">Кровати</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+
+    </aside>
+
+    <div class="works-page__content">
+      <h1 class="page-content__title">Наши работы</h1>
+      <div class="works-page-block">
+        <div class="works-page-block__inner">
+          <div class="works-page-block__item item-material">
+            <a href=""
+               data-fancybox=""
+               class="item-material__image">
+              <img src="uploads/works/1.jpg"
+                   alt="">
+            </a>
+
+          </div>
+          <div class="works-page-block__item item-material">
+            <a href=""
+               data-fancybox=""
+               class="item-material__image">
+              <img src="uploads/works/2.jpg"
+                   alt="">
+            </a>
+
+          </div>
+          <div class="works-page-block__item item-material">
+            <a href=""
+               data-fancybox=""
+               class="item-material__image">
+              <img src="uploads/works/3.jpg"
+                   alt="">
+            </a>
+
+          </div>
+          <div class="works-page-block__item item-material">
+            <a href=""
+               data-fancybox=""
+               class="item-material__image">
+              <img src="uploads/works/4.jpg"
+                   alt="">
+            </a>
+
+          </div>
+          <div class="works-page-block__item item-material">
+            <a href=""
+               data-fancybox=""
+               class="item-material__image">
+              <img src="uploads/works/5.jpg"
+                   alt="">
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

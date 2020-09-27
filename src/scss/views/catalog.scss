@@ -1,10 +1,7 @@
 .catalog {
   // .catalog__sidebar
   &__sidebar {
-    flex         : 0 0 255px;
-    width        : 100%;
-    max-width    : 255px;
-    margin-right : 30px;
+
   }
 
   // .catalog__inner
@@ -49,8 +46,8 @@
   // .item-product__stickers
   &__stickers {
     position : absolute;
-    top      : -12px;
-    right    : -14px;
+    top      : 9px;
+    right    : 9px;
   }
 
   // .item-product__image
@@ -156,13 +153,11 @@
 .item-sticker {
   // .item-sticker--new
   font-family     : $secondaryFontFamily;
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
-  width           : 55px;
-  height          : 55px;
   color           : #fff;
-  border-radius   : 50%;
+  font-size : 16px  ;
+  line-height : 22px;
+  padding :  3px 8px 1px;
+
 
   &--new {
     background-color : #f20000;
@@ -328,38 +323,6 @@
 }
 
 
-.sidebar {
-  // .sidebar__block
-  &__block {
-    margin-bottom    : 40px;
-    padding          : 20px;
-    border-radius    : 10px;
-    background-color : #f8f8f8;
-  }
-
-  // .sidebar__information
-  &__information {
-    margin-top    : 15px;
-    margin-bottom : 30px;
-  }
-
-  // .sidebar__title
-  &__title {
-    font-size     : 26px;
-    font-weight   : bold;
-    line-height   : 1.2307;
-    margin        : 0 -10px;
-    padding       : 0 10px 7px;
-    color         : #161616;
-    border-bottom : 1px solid #f1f1f1;
-
-  }
-
-  // .sidebar__catalog-menu
-  &__catalog-menu {
-    margin-top : 25px;
-  }
-}
 
 
 .catalog-information {
@@ -437,53 +400,7 @@
 }
 
 
-.menu-catalog-sidebar {
-  // .menu-catalog-sidebar__item
-  &__item {
-    margin : 20px 0;
-  }
 
-  // .menu-catalog-sidebar__link
-  &__link {
-    font-size       : 16px;
-    font-weight     : 500;
-    line-height     : 1.25;
-    display         : flex;
-    align-items     : center;
-    text-decoration : none;
-    color           : #161616;
-
-    > svg {
-      position    : relative;
-      right       : -4px;
-      flex-shrink : 0;
-      margin-left : 12px;
-
-    }
-
-    // .menu-catalog-sidebar__link.current
-    &.current,
-    &:active,
-    &:focus,
-    &:hover {
-      color : #00cc52;
-    }
-
-
-    // .menu-catalog-sidebar__link--sale
-    &--sale {
-      font-size      : 16px;
-      font-weight    : 900;
-      line-height    : 1.25;
-      text-transform : uppercase;
-      color          : #00cc52;
-    }
-  }
-
-  // .menu-catalog-sidebar__submenu
-  &__submenu {
-  }
-}
 
 
 .submenu-catalog-sidebar {

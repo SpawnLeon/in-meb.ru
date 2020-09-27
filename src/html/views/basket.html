@@ -1,0 +1,10 @@
+<% var data = {
+title: "Заголовок | Проект",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+
+<h1 class="page-content__title">Корзина</h1>
+<div class="basket">
+</div>
