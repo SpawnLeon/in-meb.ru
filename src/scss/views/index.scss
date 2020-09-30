@@ -389,6 +389,8 @@
 
   // .main-slider__btn
   &__btn {
+    top : 50%;
+    margin-top : -18px;
     // .main-slider__btn--prev
     &--prev {
       left          : 0;

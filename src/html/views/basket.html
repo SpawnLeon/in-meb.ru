@@ -3,130 +3,263 @@ title: "Заголовок | Проект",
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">
-  <div class="container__inner">
 
-    <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
-    <h1 class="page-content__title">Корзина</h1>
+<%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+<h1 class="page-content__title">Корзина</h1>
 
-    <div class="page-content__basket basket-page">
+<div class="page-content__basket basket-page">
 
-      <div class="basket-page__list basket-list">
+  <div class="basket-page__list basket-list">
 
-        <div class="basket-list__inner">
-          <div class="basket-list__item  item-basket-list">
+    <div class="basket-list__inner">
+      <div class="basket-list__item  item-basket-list">
 
 
-            <div class="item-basket-list__wrapper">
-              <div class="item-basket-list__image">
+        <div class="item-basket-list__wrapper">
+          <div class="item-basket-list__image">
 
-                <img
-                  src="uploads/basket/1.png"
-                  alt="">
+            <img
+              src="uploads/basket/1.png"
+              alt="">
+          </div>
+          <div class="item-basket-list__info">
+            <a
+              href=""
+              class="item-basket-list__name">
+              Кровать двуспальная Лондон
+            </a>
+            <div class="item-basket-list__props props-item-basket-list">
+
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Размеры спального места:</span>
+                <span class="prop-item-basket-list__value"> 160х200</span>
               </div>
-              <div class="item-basket-list__info">
-                <a
-                  href=""
-                  class="item-basket-list__name">
-                  Кровать двуспальная Лондон
-                </a>
-                <div class="item-basket-list__props props-item-basket-list">
-
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Размеры спального места:</span> <span class="prop-item-basket-list__value"> 160х200</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Цвет:</span> <span class="prop-item-basket-list__value">Коричневый 1</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Основание:</span> <span class="prop-item-basket-list__value"Деревянное</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Ящики:</span> <span class="prop-item-basket-list__value"> Без ящиков</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Материал:</span> <span class="prop-item-basket-list__value">Берёза</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Подъёмный механизм:</span> <span class="prop-item-basket-list__value">Нет</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Матрас:</span> <span class="prop-item-basket-list__value">Нет</span>
-                  </div>
-                  <div class="props-item-basket-list__item prop-item-basket-list">
-                    <span class="prop-item-basket-list__name">Ножная спинка кровати:</span> <span class="prop-item-basket-list__value">Ниже матраса</span>
-                  </div> <div class="props-item-basket-list__item prop-item-basket-list">
-                  <span class="prop-item-basket-list__name">Изделие без сучков:</span> <span class="prop-item-basket-list__value">Нет</span>
-                </div>
-
-
-
-                </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Цвет:</span>
+                <span class="prop-item-basket-list__value">Коричневый 1</span>
               </div>
-            </div>
-
-            <div class="item-basket-list__price">
-              10 368 ₽
-            </div>
-
-            <div class="item-basket-list__qty qnt-block">
-              <button type="button"
-                      class="qnt-block__btn qnt-block__btn--minus btn--clear">
-                <svg
-                  width="9"
-                  height="17"
-                  class="qnt-block__image">
-                  <use xlink:href="img/spritemap.svg#sprite-minus"></use>
-                </svg>
-              </button>
-              <div class="qnt-block__field">
-                <input
-                  type="text"
-                  value="2">
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Основание:</span>
+                <span class="prop-item-basket-list__value">Деревянное</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Ящики:</span>
+                <span class="prop-item-basket-list__value"> Без ящиков</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Материал:</span>
+                <span class="prop-item-basket-list__value">Берёза</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Подъёмный механизм:</span>
+                <span class="prop-item-basket-list__value">Нет</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Матрас:</span>
+                <span class="prop-item-basket-list__value">Нет</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Ножная спинка кровати:</span>
+                <span class="prop-item-basket-list__value">Ниже матраса</span>
+              </div>
+              <div class="props-item-basket-list__item prop-item-basket-list">
+                <span class="prop-item-basket-list__name">Изделие без сучков:</span>
+                <span class="prop-item-basket-list__value">Нет</span>
               </div>
 
-              <button type="button"
-                      class="qnt-block__btn qnt-block__btn--plus btn--clear">
-                <svg
-                  width="9"
-                  height="17"
-                  class="qnt-block__image">
-                  <use xlink:href="img/spritemap.svg#sprite-plus "></use>
-                </svg>
-              </button>
-            </div>
 
-
-            <div class="item-basket-list__price-total">
-              20 736 ₽
-            </div>
-            <div class="item-basket-list__footer">
-              <button
-                type="button"
-                class="item-basket-list__delete btn--clear"
-                aria-label="Удалить из корзины ">
-                <svg
-                  width="24"
-                  height="24">
-                  <use xlink:href="img/spritemap.svg#sprite-basket-remove"></use>
-                </svg>
-              </button>
             </div>
           </div>
-
-
         </div>
-      </div>
 
-      <div class="basket-list__footer">
-        <button
-          class="basket-list__btn form__btn btn btn--orange btn--fill"
-          type="submit">Подтвердить заказ
-        </button>
+        <div class="item-basket-list__price">
+          10 368 ₽
+        </div>
+
+        <div class="item-basket-list__qty qnt-block">
+          <button type="button"
+                  class="qnt-block__btn qnt-block__btn--minus btn--clear">
+            <svg
+              width="9"
+              height="17"
+              class="qnt-block__image">
+              <use xlink:href="img/spritemap.svg#sprite-minus"></use>
+            </svg>
+          </button>
+          <div class="qnt-block__field">
+            <input
+              type="text"
+              value="2">
+          </div>
+
+          <button type="button"
+                  class="qnt-block__btn qnt-block__btn--plus btn--clear">
+            <svg
+              width="9"
+              height="17"
+              class="qnt-block__image">
+              <use xlink:href="img/spritemap.svg#sprite-plus "></use>
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="item-basket-list__price-total">
+          20 736 ₽
+        </div>
+        <div class="item-basket-list__footer">
+          <button
+            type="button"
+            class="item-basket-list__delete btn--clear"
+            aria-label="Удалить из корзины ">
+            <svg
+              width="24"
+              height="24">
+              <use xlink:href="img/spritemap.svg#sprite-basket-remove"></use>
+            </svg>
+          </button>
+        </div>
       </div>
 
 
     </div>
+  </div>
+
+  <div class="basket-page__footer">
+    <div class="basket-page__form-title">Информация и адрес доставки</div>
+    <div class="basket-page__footer-inner">
+      <div class="basket-page__form form">
+        <form action="">
+          <div class="form__inner">
+
+            <div class="form__fields">
+              <div class="form__field item-field">
+                <label class="item-field__label">
+                  <span class="item-field__title">Имя *</span>
+                  <input type="text"
+                         class="item-field__field item-field__field--text">
+                </label>
+              </div>
+              <div class="form__field item-field">
+                <label class="item-field__label">
+                  <span class="item-field__title">E-Mail *</span>
+                  <input type="text"
+                         class="item-field__field item-field__field--text">
+                </label>
+              </div>
+              <div class="form__field item-field">
+                <label class="item-field__label">
+                  <span class="item-field__title">Телефон *</span>
+                  <input type="text"
+                         class="item-field__field item-field__field--text">
+                </label>
+              </div>
+              <div class="form__field item-field">
+                <label class="item-field__label">
+                  <span class="item-field__title">Адрес доставки *</span>
+                  <input type="text"
+                         class="item-field__field item-field__field--text">
+                </label>
+              </div>
+              <div class="form__field item-field">
+                <label class="item-field__label">
+                  <span class="item-field__title">Комментарий к заказу</span>
+                  <textarea class="item-field__field item-field__field--textarea"></textarea>
+                </label>
+              </div>
+              <div class="form__field item-field item-field--captcha">
+                google recaptcha
+              </div>
+              <div class="form__field item-field item-field--agree">
+                <label class="item-field__label item-field__label--checkbox">
+                  <input type="checkbox"
+                         checked
+                         class="item-field__field item-field__field--checkbox">
+                  <span class="item-field__title item-field__title--checkbox">
+                  Я согласен на обработку
+                <a target="_blank"
+                   rel="noopener noreferrer"
+                   href="">персональных данных</a>
+                </span>
+                </label>
+              </div>
+              <div class="form__actions form__actions--left">
+                <input type="submit"
+                       value="Подтвердить заказ"
+                       class="form__action btn btn--fill btn--green">
+              </div>
+
+
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="basket-page__information sidebar__block">
+        <div class="sidebar__information catalog-information">
+          <div class="catalog-information__title">
+            <svg width="20"
+                 height="20">
+              <use xlink:href="img/spritemap.svg#sprite-catalog-information-1"></use>
+            </svg>
+            ДОСТАВКА:
+          </div>
+          <div class="catalog-information__item">
+            Доставка в Москве до подъезда — <b>500 руб.</b>
+          </div>
+          <div class="catalog-information__item">
+            За МКАД <b>+30 руб./км.</b>
+          </div>
+          <div class="catalog-information__item">
+            По России - по тарифам транспортных компаний
+          </div>
+        </div>
+        <div class="sidebar__information catalog-information">
+          <div class="catalog-information__title">
+            <svg width="20"
+                 height="20">
+              <use xlink:href="img/spritemap.svg#sprite-catalog-information-2"></use>
+            </svg>
+            ПОДЪЕМ:
+          </div>
+          <div class="catalog-information__item">
+            1 этаж — <b>от 100 руб.</b> <br>
+            <b>до 300 руб.</b> <br>
+            Лифт — <b>350 руб.</b>
+          </div>
+        </div>
+        <div class="sidebar__information catalog-information">
+          <div class="catalog-information__title">
+            <svg width="20"
+                 height="20">
+              <use xlink:href="img/spritemap.svg#sprite-catalog-information-3"></use>
+            </svg>
+            СБОРКА МЕБЕЛИ:
+          </div>
+          <div class="catalog-information__item">
+            Односпальная кровать — <b>5%</b> от стоимости изделия
+          </div>
+          <div class="catalog-information__item">
+            Полутороспальная кровать — <b>5%</b> от стоимости изделия.
+          </div>
+          <div class="catalog-information__item">
+            Двуспальная кровать — <b>5%</b> от стоимости изделия
+          </div>
+          <div class="catalog-information__item">
+            Двухъярусная кровать — <b>5%</b> от стоимости изделия.
+          </div>
+          <div class="catalog-information__item">
+            Кровать с подъемным механизмом — <b>5% </b> от стоимости изделия.
+          </div>
+          <div class="catalog-information__item">
+            Сборка шкафа — <b>10%</b> от стоимости изделия.
+          </div>
+          <div class="catalog-information__item">
+            Комоды и тумбы доставляются <b>в собранном виде</b>.
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 

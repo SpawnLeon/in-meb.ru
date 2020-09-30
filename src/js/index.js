@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const nextEl = el.closest('.products-slider').
         querySelector('.products-slider__btn--next');
       new Swiper(el, {
-        loop: true,
+        loop: false,
         slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //reviews block slider
   new Swiper('.reviews-block__container', {
-    loop: true,
+    loop: false,
     slidesPerView: 3,
     spaceBetween: 15,
     navigation: {

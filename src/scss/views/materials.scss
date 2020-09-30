@@ -13,11 +13,24 @@
 }
 
 .materials-block {
+  // .materials-block__title
+  &__title {
+    font-size     : 26px;
+    font-weight   : bold;
+    line-height   : 1.2307;
+    margin        : 20px 0 25px;
+    padding       : 0 0 15px;
+    color         : #161616;
+    border-bottom : 1px solid #f1f1f1;
+
+
+  }
+
   // .materials-block__inner
   &__inner {
-    display : flex;
-    margin : 0 -15px;
-    flex-wrap: wrap;
+    display   : flex;
+    flex-wrap : wrap;
+    margin    : 0 -15px;
   }
 
   // .materials-block__item
@@ -27,16 +40,16 @@
 }
 
 .item-material {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: #161616;
+  font-size   : 16px;
+  font-weight : 500;
+  line-height : 1.25;
+  text-align  : center;
+  color       : #161616;
 
   // .item-material__image
   &__image {
+    display       : block;
     margin-bottom : 15px;
-    display: block;
   }
 
   // .item-material__title

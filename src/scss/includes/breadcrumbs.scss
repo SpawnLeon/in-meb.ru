@@ -1,13 +1,19 @@
 .breadcrumbs {
   display : flex;
-  margin : 30px 0 30px;
+  margin  : 30px 0 30px;
 
   // .breadcrumbs__item
   &__item {
     font-size   : 14px;
     font-weight : 600;
     line-height : 1.2142;
-    margin : 0;
+    margin      : 0;
+
+    &:not(:last-child)::after {
+      content : '/';
+      display : inline-block;
+      margin  : 0 5px 0 5px;
+    }
 
 
     &:last-child .breadcrumbs__link {
@@ -18,18 +24,9 @@
 
   // .breadcrumbs__link
   &__link {
+    color                : #161616;
     text-decoration-line : underline;
-    color       : #161616;
   }
 
-  // .breadcrumbs__delimiter
-  &__delimiter {
-    margin: 0 0 0 5px;
-  }
-}
 
-.list {
-  // .list--clear
-  &--clear {
-  }
 }

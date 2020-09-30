@@ -63,6 +63,7 @@
 
   // .header__search
   &__search {
+    flex : 0 1 358px;
   }
 
   // .header__phones
@@ -148,6 +149,7 @@
     color            : #9d9d9d;
     border-radius    : 30px;
     background-color : #f8f8f8;
+    width : 100%;
 
 
   }
@@ -205,6 +207,7 @@
 
 .item-personal-block {
   position        : relative;
+  display         : block;
   margin-left     : 15px;
   text-align      : center;
   text-decoration : none;
@@ -332,7 +335,7 @@
 
   display          : none;
   width            : 100vw;
-  margin-left      : calc((100vw - #{$contentWidth}  + 30px) / -2);
+  margin-left      : calc((100vw - #{$contentWidth} + 30px) / -2);
   background-color : #00bc4b;
 
   &.show {
@@ -341,13 +344,14 @@
 }
 
 .header__big-catalog-menu {
-  display               : grid;
   max-width             : $contentWidth;
   margin                : 0 auto;
   padding               : 50px 0;
-  grid-template-columns : 1fr 1fr 1fr 1fr;
-  grid-auto-flow        : dense;
-  grid-auto-rows        : auto;
+  column-count: 4;
+  column-gap: 60px;
+
+
+
 }
 
 .big-catalog-menu {
@@ -360,6 +364,7 @@
 
   // .big-catalog-menu__item
   &__item {
+    display: inline-block;
   }
 
   // .big-catalog-menu__link
@@ -386,6 +391,7 @@
 
   // .big-catalog-menu__icon
   &__icon {
+    fill: #fff;
   }
 
   // .big-catalog-menu__sub
