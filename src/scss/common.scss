@@ -60,6 +60,9 @@ a {
   margin    : 0 auto;
   padding   : 0 15px;
 
+  @media screen and (max-width : 1139px) {
+    padding : 0 40px;
+  }
 
 }
 
@@ -272,6 +275,7 @@ a {
   background-image    : url(../img/svg/questions-form.svg);
   background-repeat   : no-repeat;
   background-position : right bottom;
+  margin-top : 80px;
 
   // .questions-form-block--wide
   &--wide {
@@ -320,4 +324,13 @@ a {
 
 .has-sidebar {
   display : flex;
+}
+
+.fancybox-content {
+  padding          : 0;
+  background-color : transparent;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  display : none;
 }

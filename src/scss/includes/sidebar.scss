@@ -45,12 +45,32 @@
   // .menu-sidebar__item
   &__item {
     margin : 20px 0;
+    position : relative;
+
 
     &:last-child {
       margin-bottom : 0;
     }
   }
+  // .menu-sidebar__btn
+  &__btn {
+    position : absolute;
+    top : 5px;
+    right : 0;
+    transform-origin: center;
+    transform : rotate(-90deg);
+    transition: all 0.1s;
 
+    > svg {
+      position    : relative;
+    }
+
+    // .menu-sidebar__btn--open
+    &--open {
+      transform : rotate(0);
+    }
+
+  }
   // .menu-sidebar__link
   &__link {
     font-size       : 16px;
@@ -60,14 +80,8 @@
     align-items     : center;
     text-decoration : none;
     color           : #161616;
+    padding-right: 20px;
 
-    > svg {
-      position    : relative;
-      right       : -4px;
-      flex-shrink : 0;
-      margin-left : 12px;
-
-    }
 
     // .menu-sidebar__link--active
     &--active,

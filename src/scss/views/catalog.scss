@@ -21,7 +21,7 @@
 
   // .catalog__description
   &__description {
-    margin-top : 60px;
+    margin-top    : 60px;
     margin-bottom : 80px;
   }
 }
@@ -29,7 +29,7 @@
 
 .item-product {
   position         : relative;
-  padding          : 25px 20px;
+  padding          : 20px 20px;
   border           : 2px solid #f8f8f8;
   border-radius    : 5px;
   background-color : #fff;
@@ -138,8 +138,7 @@
 
   // .item-product__material-prices
   &__material-prices {
-    display    : none;
-    margin-top : 20px;
+    display : none;
   }
 }
 
@@ -152,11 +151,11 @@
 
 .item-sticker {
   // .item-sticker--new
-  font-family     : $secondaryFontFamily;
-  color           : #fff;
-  font-size : 16px  ;
+  font-family : $secondaryFontFamily;
+  font-size   : 16px;
   line-height : 22px;
-  padding :  3px 8px 1px;
+  padding     : 3px 8px 1px;
+  color       : #fff;
 
 
   &--new {
@@ -229,10 +228,10 @@
 
   // .product-list__item
   &__item {
-    flex   : 0 1 255px;;
-    margin : 0 15px 30px;
+    flex      : 0 1 255px;;
+    width     : 100%;
     max-width : 255px;
-    width : 100%;
+    margin    : 0 15px 30px;
   }
 }
 
@@ -298,9 +297,9 @@
 
     > svg {
       position    : relative;
+      top         : 2px;
       margin-left : 5px;
-      top       : 2px;
-      transform : rotate(180deg);
+      transform   : rotate(180deg);
     }
 
     // .sorting-block__item--active
@@ -321,8 +320,6 @@
     }
   }
 }
-
-
 
 
 .catalog-information {
@@ -368,8 +365,8 @@
   // .tag-filter-block__item
   &__item {
     display          : inline-block;
+    margin-right     : 5px;
     margin-bottom    : 8px;
-    margin-left      : 5px;
     padding          : 4px 10px;
     cursor           : pointer;
     text-decoration  : none;
@@ -400,11 +397,10 @@
 }
 
 
-
-
-
 .submenu-catalog-sidebar {
+  display      : none;
   padding-left : 15px;
+
   // .submenu-catalog-sidebar__item
   &__item {
   }
@@ -422,4 +418,8 @@
       color : #00cc52;
     }
   }
+}
+
+.menu-sidebar__btn--open + .submenu-catalog-sidebar {
+  display : block;
 }

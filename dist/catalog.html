@@ -587,11 +587,13 @@
           <li class="menu-sidebar__item">
             <a href=""
                class="menu-sidebar__link current">Спальные комплекты
+            </a>
+            <button class="menu-sidebar__btn" data-js-catalog-menu-btn>
               <svg width="9"
                    height="11">
                 <use xlink:href="img/spritemap.svg#sprite-sorting-down"></use>
               </svg>
-            </a>
+            </button>
 
             <ul class="menu-catalog-sidebar__submenu  submenu-catalog-sidebar list--clear">
               <li class="submenu-catalog-sidebar__item">
@@ -722,7 +724,8 @@
     <div class="catalog__content">
       <div class="catalog__tag-filter-block tag-filter-block">
         <div class="tag-filter-block__title">Часто ищут:</div>
-        <div class="tag-filter-block__item">Из массива</div>
+        <a href=""
+           class="tag-filter-block__item">Из массива</a>
         <a href=""
            class="tag-filter-block__item">140x200</a>
         <a href=""
@@ -1523,9 +1526,22 @@
                 class="questions-form__btn">Позвоните мне!
         </button>
       </div>
-      <div class="questions-form__agree">
-        Здесь согласие))) Взять из форм
+
+
+      <div class="questions-form__agree form__field item-field item-field--agree">
+        <label class="item-field__label item-field__label--checkbox">
+          <input type="checkbox"
+                 checked
+                 class="item-field__field item-field__field--checkbox">
+          <span></span>
+          Я согласен на обработку
+          <a target="_blank"
+             rel="noopener noreferrer"
+             href="">персональных данных</a>
+
+        </label>
       </div>
+
     </div>
   </div>
 </section>

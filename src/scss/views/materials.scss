@@ -36,6 +36,7 @@
   // .materials-block__item
   &__item {
     margin : 0 15px 30px;
+    flex : 0 0 calc(100% / 3 - 30px);
   }
 }
 

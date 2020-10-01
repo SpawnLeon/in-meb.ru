@@ -73,6 +73,12 @@
 
   // .item-field--agree
   &--agree {
+    font-family : 'Lato', sans-serif;
+    font-size   : 12px;
+    line-height : 1.6;
+    margin-top  : 14px;
+    color       : #152a3d;
+
     a {
       color : inherit;
     }
@@ -80,8 +86,10 @@
 
   // .item-field__label
   &__label {
+
     // .item-field__label--checkbox
     &--checkbox {
+      cursor : pointer;
     }
   }
 
@@ -127,8 +135,41 @@
       background-color : #fff;
     }
 
+
     // .item-field__field--checkbox
     &--checkbox {
+      position : absolute !important;
+      overflow : hidden;
+      clip     : rect(1px, 1px, 1px, 1px);
+      clip     : rect(1px 1px 1px 1px); /* IE6, IE7 */
+      width    : 1px !important;
+      height   : 1px !important;
+      padding  : 0 !important;
+      border   : 0 !important;
+
+
+      // .item-field__field--checkbox::checked + span
+      & + span {
+        display          : inline-block;
+        width            : 12px;
+        height           : 12px;
+        margin-right     : 7px;
+        cursor           : pointer;
+        vertical-align   : -1px;
+        border           : 1px solid #a6a6a6;
+        border-radius    : 2px;
+        background-color : #f8f8f8;
+      }
+
+      // .item-field__field--checkbox::checked + span
+      &:checked + span {
+        background-image    : url(../../img/svg/tick.svg);
+        background-repeat   : no-repeat;
+        background-position : center;
+
+      }
+
+
     }
   }
 

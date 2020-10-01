@@ -112,6 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.querySelectorAll('[data-js-catalog-menu-btn]').forEach(function(el) {
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+      this.classList.toggle('menu-sidebar__btn--open');
+    });
+  });
+
 });
 
 
