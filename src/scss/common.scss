@@ -143,9 +143,11 @@ a {
 .swiper-button-next {
   position            : absolute;
   z-index             : 1;
+  top                 : 50%;
   width               : 35px;
   height              : 36px;
   cursor              : pointer;
+  transform           : translateY(-50%);
   background-color    : #00cc52;
   background-repeat   : no-repeat;
   background-position : center;
@@ -167,6 +169,7 @@ a {
 
   border-radius    : 0 5px 5px 0;
   background-image : url(../img/svg/slider-arrow-right.svg);
+  right : 0;
 }
 
 .swiper-button-disabled {
@@ -339,4 +342,36 @@ a {
 
 .fancybox-slide--html .fancybox-close-small {
   display : none;
+}
+
+
+
+
+.banner-slider {
+  position : relative;
+  margin-bottom : 60px;
+
+  // .banner-slider__container
+  &__container {
+  }
+  // .banner-slider__wrapper
+  &__wrapper {
+  }
+  // .banner-slider__slide
+  &__slide {
+  }
+  // .banner-slider__btn
+  &__btn {
+    // .banner-slider__btn--prev
+    &--prev {
+      border-radius: 0 5px 5px 0;
+    }
+    // .banner-slider__btn--next
+    &--next {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  // .banner-slider___pagination
+  &___pagination {
+  }
 }

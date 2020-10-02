@@ -76,6 +76,21 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  //banner slider
+  new Swiper('.banner-slider__container', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.banner-slider___pagination',
+      clickable: true,
+    },
+    navigation: {
+      prevEl: '.banner-slider__btn--prev',
+      nextEl: '.banner-slider__btn--next',
+    },
+  });
+
   const toggleBigCatalogMenuBtn = document.querySelector(
     '[ data-js="toggle-big-catalog-menu"]');
   if (toggleBigCatalogMenuBtn) {

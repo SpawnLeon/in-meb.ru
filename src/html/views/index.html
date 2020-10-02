@@ -663,9 +663,26 @@ pageClasses: "page-content--front-page"
     </div>
   </section>
 
-  <div class="main-page__banner">
-    <img src="uploads/main-page/1.png"
-         alt="">
+  <div class="main-page__banner banner-slider">
+    <div class="swiper-container banner-slider__container">
+      <div class="swiper-wrapper banner-slider__wrapper">
+        <div class="swiper-slide banner-slider__slide">
+          <img src="uploads/main-page/1.png"
+               alt="">
+        </div>
+        <div class="swiper-slide banner-slider__slide">
+          <img src="uploads/main-page/1.png"
+               alt="">
+        </div>
+        <div class="swiper-slide banner-slider__slide">
+          <img src="uploads/main-page/1.png"
+               alt="">
+        </div>
+      </div>
+      <div class="swiper-button-prev banner-slider__btn banner-slider__btn--prev"></div>
+      <div class="swiper-button-next banner-slider__btn banner-slider__btn--next"></div>
+    </div>
+    <div class="swiper-pagination banner-slider___pagination"></div>
   </div>
 
   <section class="main-page__new new-block">
