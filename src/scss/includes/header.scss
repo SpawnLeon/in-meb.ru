@@ -253,6 +253,10 @@
   display     : flex;
   align-items : flex-end;
 
+  @media screen and (max-width : 1139px) {
+    margin-left : 30px;
+  }
+
 
   // .personal-block__item
   &__item {
@@ -305,6 +309,10 @@
     text-align     : center;
     letter-spacing : -0.015em;
     color          : #161616;
+
+    @media screen and (max-width : 1139px) {
+      display : none;
+    }
 
   }
 }

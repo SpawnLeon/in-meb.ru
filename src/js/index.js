@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         querySelector('.products-slider__btn--next');
       new Swiper(el, {
         loop: false,
+        watchSlidesVisibility: true,
         slidesPerView: 4,
         spaceBetween: 30,
         navigation: {

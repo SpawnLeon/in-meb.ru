@@ -240,8 +240,8 @@ a {
 
   // .products-slider__container
   &__container {
-    margin-bottom  : -190px;
-    padding-bottom : 190px;
+
+    overflow : visible;
   }
 
   // .products-slider__wrapper
@@ -250,6 +250,12 @@ a {
 
   // .products-slider__slide
   &__slide {
+    transition : opacity 0.3s;
+    opacity    : 0;
+
+    &.swiper-slide-visible {
+      opacity : 1;
+    }
   }
 
   // .products-slider__btn
@@ -270,12 +276,12 @@ a {
 }
 
 .questions-form-block {
+  margin-top          : 80px;
   margin-bottom       : -80px;
   background-color    : #00cc52;
   background-image    : url(../img/svg/questions-form.svg);
   background-repeat   : no-repeat;
   background-position : right bottom;
-  margin-top : 80px;
 
   // .questions-form-block--wide
   &--wide {
