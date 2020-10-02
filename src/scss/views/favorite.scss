@@ -1,0 +1,43 @@
+.favorite {
+  // .favorite__block
+  &__block {
+    margin-bottom : 40px;
+  }
+  // .favorite__content
+  &__content {
+  }
+  // .favorite__list
+  &__list {
+  }
+}
+.favorite-block {
+
+  padding : 25px;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  display : inline-block;
+
+
+  // .favorite-block__inner
+  &__inner {
+    display : flex;
+    align-items : center;
+  }
+  // .favorite-block__text
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222;
+    color: #161616;
+  }
+  // .favorite-block__btn
+  &__btn {
+    margin-left : 30px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2083;
+    text-align: center;
+    padding : 11px 50px;
+  }
+}

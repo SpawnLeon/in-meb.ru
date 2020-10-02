@@ -112,6 +112,20 @@
     justify-content : space-between;
     width           : 100%;
   }
+
+  // .header__search-popup
+  &__search-popup {
+    position : absolute;
+    z-index : 1 ;
+  }
+
+  // .header__sale-btn
+  &__sale-btn {
+  }
+
+  // .header__sale-menu
+  &__big-catalog-menu {
+  }
 }
 
 
@@ -363,15 +377,6 @@
 }
 
 
-.header {
-  // .header__sale-btn
-  &__sale-btn {
-  }
-
-  // .header__sale-menu
-  &__big-catalog-menu {
-  }
-}
 
 .menu-sale-btn {
   height              : 20px;
@@ -485,3 +490,6 @@
     }
   }
 }
+
+
+
