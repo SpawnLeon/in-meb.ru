@@ -63,6 +63,9 @@ a {
   @media screen and (max-width : 1139px) {
     padding : 0 40px;
   }
+  @media screen and (max-width : 767px) {
+    padding : 0 15px;
+  }
 
 }
 
@@ -269,11 +272,19 @@ a {
     // .products-slider__btn--prev
     &--prev {
       left : -50px;
+
+      @media screen and (max-width : 1210px) {
+        left : -35px;
+      }
     }
 
     // .products-slider__btn--next
     &--next {
       right : -50px;
+
+      @media screen and (max-width : 1210px) {
+        right : -35px;
+      }
     }
   }
 }

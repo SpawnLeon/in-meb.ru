@@ -11,6 +11,20 @@ const fancybox = require('@fancyapps/fancybox');
 
 import Swiper from 'swiper';
 
+function showMenu() {
+  document.body.classList.add('has-menu-slide');
+  document.querySelector('.mobile-menu-block').
+    classList.add('mobile-menu-block--show');
+}
+
+function hideMenu() {
+  document.body.classList.remove('has-menu-slide');
+  document.querySelector('.mobile-menu-block').
+    classList.
+    remove('mobile-menu-block--show');
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // main slider
@@ -43,6 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
           prevEl,
           nextEl,
         },
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          },
+          // when window width is >= 560px
+          560: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          // when window width is >= 640px
+          1140: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }
+        }
+
       });
     });
 
@@ -134,6 +173,25 @@ document.addEventListener('DOMContentLoaded', () => {
       this.classList.toggle('menu-sidebar__btn--open');
     });
   });
+
+
+  // mobile menu
+
+  const menuSlideOpen = document.querySelector('[data-js="menu-slide-open"]');
+  if (menuSlideOpen) {
+    menuSlideOpen.addEventListener('click', function(event) {
+
+      event.preventDefault();
+      showMenu();
+    });
+  }
+  const menuslideClose = document.querySelector('[data-js="menu-slide-close"]');
+  if (menuslideClose) {
+    menuslideClose.addEventListener('click', function(event) {
+      event.preventDefault();
+      hideMenu();
+    });
+  }
 
 });
 

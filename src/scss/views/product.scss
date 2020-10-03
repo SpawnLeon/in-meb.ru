@@ -49,6 +49,10 @@
     margin-top : 80px;
   }
 
+  // .product__kit
+  &__kit {
+    margin-top : 80px;
+  }
 }
 
 .order-delivery-product {
@@ -723,5 +727,88 @@
 
   // .cheap-exp-block__content
   &__content {
+  }
+}
+
+
+.kit-block {
+  // .kit-block__title
+  &__title {
+    font-size   : 30px;
+    font-weight : 800;
+    line-height : 1.2333;
+    text-align  : center;
+
+    color       : #161616;
+  }
+
+  // .kit-block__inner
+  &__inner {
+    display   : flex;
+    flex-wrap : wrap;
+    margin    : 35px -12px 0;
+  }
+
+  // .kit-block__item
+  &__item {
+    flex      : 0 1 202px;;
+    width     : 100%;
+    max-width : 202px;
+    margin    : 0 12px 24px;
+  }
+}
+
+.item-kit {
+  position         : relative;
+  padding          : 15px 12px;
+  border           : 2px solid #f8f8f8;
+  border-radius    : 5px;
+  background-color : #fff;
+
+  // .item-kit__image
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  // .item-kit__title
+  &__title {
+    font-size       : 16px;
+    font-weight     : 600;
+    line-height     : 1.25;
+    display         : inline-block;
+    overflow        : hidden;
+    height          : 40px;
+    text-decoration : none;
+    text-overflow   : ellipsis;
+    color           : #161616;
+  }
+
+  // .item-kit__props
+  &__props {
+  }
+}
+
+.kit-props {
+  // .kit-props__title
+  &__title {
+    font-size   : 12px;
+    line-height : 1.25;
+
+    color       : #161616;
+  }
+
+  // .kit-props__inner
+  &__inner {
+    margin-top : 6px;
+  }
+
+  // .kit-props__item
+  &__item {
+    font-size   : 12px;
+    line-height : 1.5;
+    color       : #9d9d9d;
   }
 }
