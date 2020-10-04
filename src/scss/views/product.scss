@@ -25,8 +25,13 @@
 
   // .product__images
   &__images {
-    flex      : 0 0 calc(100% - 360px);
-    max-width : calc(100% - 360px);
+    flex      : 0 0 calc(100% - 570px);
+    max-width : calc(100% - 570px);
+
+    @media screen and (max-width : 1139px) {
+      flex      : 0 0 calc(100% - 360px);
+      max-width : calc(100% - 360px);
+    }
   }
 
   // .product__info
