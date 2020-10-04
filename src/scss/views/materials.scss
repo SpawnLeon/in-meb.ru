@@ -31,12 +31,34 @@
     display   : flex;
     flex-wrap : wrap;
     margin    : 0 -15px;
+
+    @media screen and (max-width : 767px) {
+      margin    : 0 -5px;
+    }
   }
 
   // .materials-block__item
   &__item {
     margin : 0 15px 30px;
     flex : 0 0 calc(100% / 3 - 30px);
+
+    @media screen and (max-width : 1139px) {
+      flex : 0 0 calc(100% / 2 - 30px);
+    }
+
+    @media screen and (max-width : 767px) {
+      margin : 0 5px 20px;
+      flex : 0 0 calc(100% / 2 - 10px);
+    }
+
+    @media screen and (max-width : 767px) {
+      margin : 0 5px 20px;
+      flex : 1 1 100%;
+    }
+
+    img {
+      width : 100%;
+    }
   }
 }
 

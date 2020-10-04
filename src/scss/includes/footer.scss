@@ -73,6 +73,13 @@
     max-width   : 680px;
     margin-top  : 20px;
     margin-left : 60px;
+
+    @media screen and (max-width : 1139px) {
+      float       : none;
+      max-width   : none;
+      margin-top  : 40px;
+      margin-left : 0;
+    }
   }
 
   // .footer__menu

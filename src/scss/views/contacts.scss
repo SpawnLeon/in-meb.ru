@@ -43,11 +43,11 @@
 
   // .contacts-information__item
   &__item {
-    display       : flex;
-    align-items   : center;
-    margin-bottom : 20px;
+    display         : flex;
+    align-items     : center;
+    margin-bottom   : 20px;
     text-decoration : none;
-    color : inherit;
+    color           : inherit;
 
     > svg {
       flex-shrink  : 0;
@@ -81,6 +81,10 @@
   // .contacts-form-block__props
   &__props {
     margin-right : 70px;
+  }
+
+  > [id*="comp_"] {
+    flex : 1 1 auto;
   }
 }
 

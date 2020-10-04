@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><% var data = {
+    title: "Заголовок | Проект",
+    }; %>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+
+    <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+
+    <h1 class="page-content__title">Отзывы</h1>
+    <div class="reviews-page">
+
+      <button type="button"
+              class="reviews-page__btn btn btn--green btn--fill btn--clear">Оставить отзыв
+      </button>
+
+
+      <div class="reviews-page__content">
+
+
+        <div class="reviews-page__list reviews-page-list">
+          <div class="reviews-page-list__inner">
+
+            <div class="reviews-page-list__item item-review-page">
+              <div class="item-review-page__inner">
+                <div class="item-review-page__content">
+                  <div class="item-review-page__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer aliquet arcu a dignissim mollis.
+                  </div>
+                  <div class="item-review-page__author">
+                    <svg width="16"
+                         height="16">
+                      <use xlink:href="img/spritemap.svg#sprite-author"></use>
+                    </svg>
+                    Алексей Н.
+                  </div>
+                </div>
+                <div class="item-review-page__product product-item-review">
+                  <div class="product-item-review__image">
+                    <img src="uploads/products/1.png"
+                         alt="">
+                  </div>
+                  <a href=""
+                     class="product-item-review__title">Кровать двуспальная Лондон</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="reviews-page-list__item item-review-page">
+              <div class="item-review-page__inner">
+                <div class="item-review-page__content">
+                  <div class="item-review-page__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer aliquet arcu a dignissim mollis.
+                  </div>
+                  <div class="item-review-page__author">
+                    <svg width="16"
+                         height="16">
+                      <use xlink:href="img/spritemap.svg#sprite-author"></use>
+                    </svg>
+                    Алексей Н.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="reviews-page-list__item item-review-page">
+              <div class="item-review-page__inner">
+                <div class="item-review-page__content">
+                  <div class="item-review-page__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer aliquet arcu a dignissim mollis.
+                  </div>
+                  <div class="item-review-page__author">
+                    <svg width="16"
+                         height="16">
+                      <use xlink:href="img/spritemap.svg#sprite-author"></use>
+                    </svg>
+                    Алексей Н.
+                  </div>
+                </div>
+                <div class="item-review-page__product product-item-review">
+                  <div class="product-item-review__image">
+                    <img src="uploads/products/1.png"
+                         alt="">
+                  </div>
+                  <a href=""
+                     class="product-item-review__title">Кровать двуспальная Лондон</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <%= _.template(require('./../includes/footer.html'). default)(data) %>
+  </title>
+</head>
+<body>
+
+</body>
+</html>

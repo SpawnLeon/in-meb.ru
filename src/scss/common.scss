@@ -301,6 +301,17 @@ a {
   &--wide {
     width       : 100vw;
     margin-left : calc((100vw - #{$contentWidth} + 30px) / -2);
+
+    @media screen and (max-width : 1139px) {
+      margin-left : -40px;
+      padding : 0 40px;
+    }
+
+    @media screen and (max-width : 767px) {
+      margin-left : -15px;
+      padding : 0 15px;
+
+    }
   }
 
 
@@ -312,12 +323,26 @@ a {
     margin      : 0 auto;
     padding     : 35px 0;
 
+    @media screen and (max-width : 767px) {
+      display : block;
+      padding-bottom: 80px;
+    }
+
   }
 
   // .questions-form-block__info
   &__info {
     max-width    : 400px;
     margin-right : 150px;
+
+    @media screen and (max-width : 1139px) {
+      max-width    : 340px;
+      margin-right : 50px;
+    }
+    @media screen and (max-width : 767px) {
+      max-width    : 100%;
+      margin-right : 0
+    }
   }
 
   // .questions-form-block__title
@@ -333,12 +358,16 @@ a {
     font-family : 'Lato', sans-serif;
     font-size   : 16px;
     color       : rgba(255, 255, 255, 0.95);
+    margin-top : 10px;
 
 
   }
 
   // .questions-form-block__form
   &__form {
+    @media screen and (max-width : 1139px) {
+      margin-left : auto;
+    }
   }
 }
 
@@ -360,7 +389,7 @@ a {
 
 .banner-slider {
   position : relative;
-  margin-bottom : 60px;
+  margin-bottom : 40px;
 
   // .banner-slider__container
   &__container {

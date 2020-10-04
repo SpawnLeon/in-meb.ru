@@ -8,6 +8,7 @@
     font-weight : 600;
     line-height : 1.2142;
     margin      : 0;
+    display : flex;
 
     &:not(:last-child)::after {
       content : '/';

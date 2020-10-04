@@ -94,6 +94,24 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.reviews-block__btn--prev',
       nextEl: '.reviews-block__btn--next',
     },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      1140: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
   });
 
   // product slider
@@ -120,10 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 0,
-    pagination: {
-      el: '.banner-slider___pagination',
-      clickable: true,
-    },
     navigation: {
       prevEl: '.banner-slider__btn--prev',
       nextEl: '.banner-slider__btn--next',
