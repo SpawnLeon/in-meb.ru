@@ -15,14 +15,38 @@
 .works-page-block {
   // .works-page-block__inner
   &__inner {
-    display : flex;
-    margin : 0 -15px;
-    flex-wrap: wrap;
+    display   : flex;
+    flex-wrap : wrap;
+    margin    : 0 -15px;
+
+    @media screen and (max-width : 767px) {
+      margin    : 0 0;
+    }
   }
 
   // .works-page-block__item
   &__item {
+    flex   : 0 0 calc(100% / 3 - 30px);
     margin : 0 15px 30px;
+
+
+    @media screen and (max-width : 1139px) {
+      flex : 0 0 calc(100% / 2 - 30px);
+    }
+
+    @media screen and (max-width : 767px) {
+      flex   : 0 0 calc(100% / 2 - 10px);
+      margin : 0 0 20px;
+    }
+
+    @media screen and (max-width : 767px) {
+      flex   : 1 1 auto;
+      margin : 0 5px 20px;
+    }
+
+    img {
+      width : 100%;
+    }
   }
 }
 
