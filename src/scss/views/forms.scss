@@ -50,6 +50,11 @@
     color       : #454545;
   }
 
+  // .form-close__messages
+  &__messages {
+    margin : 15px auto;
+  }
+
   // .form__actions
   &__actions {
     display         : flex;
@@ -176,6 +181,28 @@
 
 }
 
-.popup-form .form {
-  max-width : 730px;
+
+.form-messages {
+  width            : 100%;
+  max-width        : 380px;
+  padding          : 25px 30px 35px;
+  text-align       : center;
+  border           : 2px solid #00cc52;
+  border-radius    : 10px;
+  background-color : #fff;
+
+  // .form-messages__icon
+  &__icon {
+    display : inline-block;
+  }
+
+  // .form-messages__text
+  &__text {
+    font-size   : 18px;
+    font-weight : 500;
+    line-height : 1.2222;
+    margin-top  : 15px;
+
+    color       : #454545;
+  }
 }
