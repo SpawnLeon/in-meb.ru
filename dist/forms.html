@@ -729,6 +729,17 @@
         </button>
         <div class="form__inner">
           <div class="form__title">Сохранить цену</div>
+
+          <div class="form__messages form-messages">
+            <div class="form-messages__icon">
+              <svg width="32"
+                   height="32">
+                <use xlink:href="img/spritemap.svg#sprite-form-messages-icon"></use>
+              </svg>
+            </div>
+            <div class="form-messages__text">Спасибо! Ваша заявка принята!</div>
+          </div>
+
           <div class="form__description">
             Нет возможности купить сейчас? Не упустите выгодную цену! Оформите заказ с текущей скидкой и оплатите его в течение 30 дней
           </div>
@@ -761,12 +772,12 @@
                 <input type="checkbox"
                        checked
                        class="item-field__field item-field__field--checkbox">
-                <span class="item-field__title item-field__title--checkbox">
-                  Я согласен на обработку
+                <span></span>
+                Я согласен на обработку
                 <a target="_blank"
                    rel="noopener noreferrer"
                    href="">персональных данных</a>
-                </span>
+
               </label>
             </div>
             <div class="form__actions">
@@ -913,7 +924,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer__main ">
+    <div class="footer__main">
       <a href=""
          class="footer__logo logo">
         <svg class="logo__image"

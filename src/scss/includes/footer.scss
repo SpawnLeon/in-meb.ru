@@ -17,6 +17,10 @@
 
   // .footer__main
   &__main {
+
+    @media screen and (max-width : 1139px) {
+      display : flex;
+    }
   }
 
   // .footer__logo

@@ -95,10 +95,10 @@
   &__wrapper {
     display       : flex;
     align-items   : center;
+    flex          : 0 0 550px;
     min-width     : 380px;
     margin-right  : auto;
     padding-right : 15px;
-
   }
 
 
@@ -136,28 +136,25 @@
 
   }
 
-  // .item-basket-list__price
-  &__price {
+  // .item-basket-list__prices
+  &__prices {
     font-size   : 15px;
     font-weight : bold;
     margin      : 0 auto;
     padding     : 0 15px;
     white-space : nowrap;
     color       : #54585d;
-
-
   }
 
-  // .item-basket-list__price-total
-  &__price-total {
-    font-size   : 15px;
-    font-weight : bold;
-    margin      : 0 auto;
-    padding     : 0 15px;
-    white-space : nowrap;
-    color       : #54585d;
-
-
+  // .item-basket-list__price
+  &__price {
+    // .item-basket-list__price--old
+    &--old {
+      color: #9d9d9d;
+      text-decoration-line: line-through;
+      font-size : 80%;
+      text-align-last : right;
+    }
   }
 
   // .item-basket-list__footer
