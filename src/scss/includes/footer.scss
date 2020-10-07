@@ -21,20 +21,37 @@
     @media screen and (max-width : 1139px) {
       display : flex;
     }
+
+    @media screen and (max-width : 767px) {
+      flex-direction : column;
+    }
   }
 
   // .footer__logo
   &__logo {
+
+    @media screen and (max-width : 767px) {
+      align-items : flex-start;
+    }
   }
 
   // .footer__contacts
   &__contacts {
     margin-top : 30px;
+
+
+    @media screen and (max-width : 767px) {
+      margin-top : 40px;
+    }
   }
 
   // .footer__phones
   &__phones {
     margin-top : 30px;
+
+    @media screen and (max-width : 767px) {
+      margin-top : 0;
+    }
   }
 
   // .footer__mail
@@ -42,9 +59,14 @@
     font-size   : 18px;
     font-weight : bold;
     line-height : 1.2222;
-    display     : inline-block;
+    display     : flex;
     margin-top  : 15px;
     color       : #fff;
+    align-items : center;
+
+    svg {
+      margin-right : 8px;
+    }
   }
 
   // .footer__dev
@@ -111,9 +133,14 @@
     font-size       : 18px;
     font-weight     : bold;
     line-height     : 1.2222;
-    display         : block;
+
     margin-top      : 9px;
     text-decoration : none;
+    display : flex;
+
+    svg {
+      margin-right : 8px;
+    }
 
     &:first-child {
       margin-top : 0;
@@ -149,6 +176,10 @@
     width         : calc(100% / 4);
     margin        : 0 0 15px 0;
     padding-right : 15px;
+
+    @media screen and (max-width : 767px) {
+      width : calc(100% / 2);
+    }
   }
 
   // .footer-menu__link
@@ -159,6 +190,10 @@
 .footer-menu--catalog {
   .footer-menu__item {
     width : calc(100% / 3);
+
+    @media screen and (max-width : 767px) {
+      width : calc(100% / 2);
+    }
   }
 }
 
