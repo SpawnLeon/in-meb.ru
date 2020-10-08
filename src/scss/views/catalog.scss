@@ -61,6 +61,7 @@
     align-items     : center;
     justify-content : center;
     margin-bottom   : 20px;
+    height : 212px;
   }
 
   // .item-product__title
@@ -500,6 +501,6 @@
   }
 }
 
-.menu-sidebar__btn--open + .submenu-catalog-sidebar {
+.menu-sidebar__btn.open + .submenu-catalog-sidebar {
   display : block;
 }

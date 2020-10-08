@@ -150,10 +150,10 @@
   &__price {
     // .item-basket-list__price--old
     &--old {
-      color: #9d9d9d;
-      text-decoration-line: line-through;
-      font-size : 80%;
-      text-align-last : right;
+      font-size            : 80%;
+      text-align-last      : right;
+      color                : #9d9d9d;
+      text-decoration-line : line-through;
     }
   }
 
@@ -201,7 +201,6 @@
   .item-basket-list__image {
     &::before {
       content : 'Товар';
-      @include basket-table-headers;
 
     }
   }
@@ -221,12 +220,20 @@
     }
   }
 
-  // .item-basket-list__price
-  .item-basket-list__price {
+  // .item-basket-list__prices
+  .item-basket-list__prices {
 
     &::before {
       content : 'Цена';
       @include basket-table-headers;
+    }
+
+    // .item-basket-list__prices--total
+    &--total {
+      &::before {
+        content : 'Сумма';
+        @include basket-table-headers;
+      }
     }
 
   }

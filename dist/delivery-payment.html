@@ -34,6 +34,11 @@
           </svg>
           Коллекции
         </a>
+        <button class="mobile-catalog-menu__btn" data-js-catalog-menu-btn="">
+          <svg width="12" height="6">
+            <use xlink:href="img/spritemap.svg#sprite-mobile-catalog-menu-down"></use>
+          </svg>
+        </button>
         <ul class="mobile-catalog-menu__sub mobile-catalog-sub-menu list--clear">
           <li class="mobile-catalog-sub-menu__item">
             <a href=""
@@ -727,18 +732,22 @@
         <ul class="sidebar__menu menu-sidebar list--clear">
           <li class="menu-sidebar__item">
             <a href=""
+               data-js-scroll="delivery-payment-step-1"
                class="menu-sidebar__link">Шаг 1 - Заказ</a>
           </li>
           <li class="menu-sidebar__item">
             <a href=""
+               data-js-scroll="delivery-payment-step-2"
                class="menu-sidebar__link">Шаг 2 - Подтверждение и производство</a>
           </li>
           <li class="menu-sidebar__item">
             <a href=""
+               data-js-scroll="delivery-payment-step-3"
                class="menu-sidebar__link">Шаг 3 - Доставка</a>
           </li>
           <li class="menu-sidebar__item">
             <a href=""
+               data-js-scroll="delivery-payment-step-4"
                class="menu-sidebar__link">Шаг 4 - Оплата</a>
           </li>
         </ul>
@@ -752,7 +761,7 @@
     <div class="delivery-payment__content">
       <h1 class="page-content__title">Информация о доставке</h1>
       <div class="delivery-payment-block">
-        <div class="delivery-payment-block__item item-delivery-payment">
+        <div id="delivery-payment-step-1" class="delivery-payment-block__item item-delivery-payment">
           <div class="item-delivery-payment__title">Шаг 1 - Заказ</div>
           <div class="item-delivery-payment__desc">
             Для оформления заявок и заказов мы предлагаем клиентам сразу несколько простых и удобных способов связи:
@@ -767,7 +776,8 @@
             </div>
             <div class="item-delivery-payment__text-icon">
               Телефонный звонок. Менеджеры всегда рады предоставить необходимые сведения и принять заказ по номеру:
-              <a href="tel:+79991234567" class="item-delivery-payment__phone">8 (999) 123-45-67</a>, прием заказов по телефону выполняется с 9.00 до 21.00.
+              <a href="tel:+79991234567"
+                 class="item-delivery-payment__phone">8 (999) 123-45-67</a>, прием заказов по телефону выполняется с 9.00 до 21.00.
             </div>
 
             <div class="item-delivery-payment__icon">
@@ -816,7 +826,7 @@
           </div>
 
         </div>
-        <div class="delivery-payment-block__item item-delivery-payment">
+        <div id="delivery-payment-step-2" class="delivery-payment-block__item item-delivery-payment">
           <div class="item-delivery-payment__title">Шаг 2 - Подтверждение и производство</div>
           <div class="item-delivery-payment__inner">
             <div class="item-delivery-payment__image">
@@ -832,7 +842,7 @@
           </div>
 
         </div>
-        <div class="delivery-payment-block__item item-delivery-payment">
+        <div id="delivery-payment-step-3" class="delivery-payment-block__item item-delivery-payment">
           <div class="item-delivery-payment__title">Шаг 3 - Доставка</div>
 
 
@@ -852,7 +862,7 @@
 
 
         </div>
-        <div class="delivery-payment-block__item item-delivery-payment">
+        <div id="delivery-payment-step-4" class="delivery-payment-block__item item-delivery-payment">
           <div class="item-delivery-payment__title">Шаг 4 - Оплата</div>
 
 

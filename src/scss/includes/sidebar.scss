@@ -69,8 +69,8 @@
       position    : relative;
     }
 
-    // .menu-sidebar__btn--open
-    &--open {
+    // .menu-sidebar__btn.open
+    &.open {
       transform : rotate(-180deg);
     }
 

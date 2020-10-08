@@ -24,7 +24,6 @@ function hideMenu() {
     remove('mobile-menu-block--show');
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // main slider
@@ -63,24 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
           // when window width is >= 320px
           320: {
             slidesPerView: 1,
-            spaceBetween: 0
+            spaceBetween: 0,
           },
           // when window width is >= 560px
           560: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 20,
           },
           // when window width is >= 480px
           768: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
           },
           // when window width is >= 640px
           1140: {
             slidesPerView: 4,
             spaceBetween: 30,
-          }
-        }
+          },
+        },
 
       });
     });
@@ -99,19 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 0
+        spaceBetween: 0,
       },
       // when window width is >= 480px
       768: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       // when window width is >= 640px
       1140: {
         slidesPerView: 3,
         spaceBetween: 30,
-      }
-    }
+      },
+    },
   });
 
   // product slider
@@ -184,10 +183,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-js-catalog-menu-btn]').forEach(function(el) {
     el.addEventListener('click', function(event) {
       event.preventDefault();
-      this.classList.toggle('menu-sidebar__btn--open');
+      this.classList.toggle('open');
     });
   });
-
 
   // mobile menu
 
@@ -207,6 +205,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  //scroll
+  document.querySelectorAll('[data-js-scroll]').forEach(function(el) {
+    el.addEventListener('click', function(event) {
+      const scrollTarget = this.dataset.jsScroll;
+      if (scrollTarget) {
+        event.preventDefault();
+        const scrollTargetElement = document.querySelector(
+          `#${scrollTarget}`);
+        if (scrollTargetElement) {
+          scrollTargetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+      }
+    });
+
+  });
 });
 
 
