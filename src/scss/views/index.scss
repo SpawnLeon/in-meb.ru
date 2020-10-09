@@ -48,7 +48,6 @@
   &__works {
     width         : 100vw;
     margin-top    : 45px;
-    margin-bottom : -80px;
     margin-left   : calc((100vw - #{$contentWidth}) / -2);
 
     @media screen and (max-width : 1139px) {

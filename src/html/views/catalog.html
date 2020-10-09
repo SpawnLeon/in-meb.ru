@@ -29,9 +29,14 @@ title: "Заголовок | Проект",
     <div class="swiper-pagination banner-slider___pagination"></div>
   </div>
 
-  <div class="catalog__inner">
+  <div class="catalog__inner has-sidebar">
     <aside class="catalog__sidebar sidebar">
-      <div class="sidebar__block">
+      <button class="sidebar__burger burger-sidebar" data-js-catalog-menu-btn>
+        <svg class="" width="30" height="20">
+          <use xlink:href="img/spritemap.svg#sprite-burger-sidebar"></use>
+        </svg>
+      </button>
+      <div class="sidebar__block sidebar__block--menu">
         <div class="sidebar__title">Каталог</div>
         <ul class="sidebar__menu menu-sidebar list--clear">
           <li class="menu-sidebar__item">

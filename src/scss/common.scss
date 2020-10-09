@@ -323,7 +323,7 @@ a {
     align-items : center;
     max-width   : $contentWidth;
     margin      : 0 auto;
-    padding     : 35px 0;
+    padding     : 35px 15px;
 
     @media screen and (max-width : 767px) {
       display        : block;
@@ -375,6 +375,10 @@ a {
 
 .has-sidebar {
   display : flex;
+
+  @media screen and (max-width : 1139px) {
+    display : block!important;
+  }
 }
 
 .fancybox-content {

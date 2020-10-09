@@ -183,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-js-catalog-menu-btn]').forEach(function(el) {
     el.addEventListener('click', function(event) {
       event.preventDefault();
+
       this.classList.toggle('open');
     });
   });
@@ -192,11 +193,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuSlideOpen = document.querySelector('[data-js="menu-slide-open"]');
   if (menuSlideOpen) {
     menuSlideOpen.addEventListener('click', function(event) {
-
       event.preventDefault();
       showMenu();
     });
   }
+
+
+
   const menuslideClose = document.querySelector('[data-js="menu-slide-close"]');
   if (menuslideClose) {
     menuslideClose.addEventListener('click', function(event) {
