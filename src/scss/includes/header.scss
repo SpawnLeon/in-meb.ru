@@ -603,13 +603,15 @@
 
   // .mobile-menu-block__close
   &__close {
-    position : absolute;
-    top      : 20px;
-    right    : 20px;
+    position: sticky;
+    top: 0;
+    left: 100%;
+    z-index : 10;
   }
 
   // .mobile-menu-block__inner
   &__inner {
+    margin-top : -20px;
 
   }
 

@@ -134,6 +134,7 @@
     // .item-field__field--textarea
     &--textarea {
       width            : 100%;
+      min-height       : 200px;
       padding          : 14px 25px 15px;
       border           : 2px solid #ccc;
       border-radius    : 3px;
