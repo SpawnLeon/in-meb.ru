@@ -227,9 +227,24 @@ document.addEventListener('DOMContentLoaded', () => {
     forEach((propsProductItem) => {
       propsProductItem.addEventListener('click', (event) => {
         event.preventDefault();
-        propsProductItem.querySelector('.props-product__field').
-          classList.
-          toggle('props-product__field--open');
+
+        const propsProductField = propsProductItem.querySelector(
+          '.props-product__field');
+        if (propsProductField) {
+
+          document.addEventListener('click', function(event) {
+
+            if (event.target.closest('.props-product__item') !== propsProductItem) {
+              propsProductField.classList.remove('props-product__field--open');
+            }
+          });
+
+
+          propsProductField.classList.add('props-product__field--open');
+
+
+        }
+
       });
     });
 
