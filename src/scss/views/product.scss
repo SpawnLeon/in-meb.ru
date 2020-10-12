@@ -433,7 +433,7 @@
 
 .list-props-product {
   position         : absolute;
-  top              : 100%;
+  top              : calc(100% + -1px);
   display          : none;
   overflow         : auto;
   max-height       : 300px;
