@@ -4,6 +4,10 @@
   border-radius    : 10px;
   background-color : #f8f8f8;
 
+  @media screen and (max-width : 660px) {
+    padding          : 35px;
+  }
+
   // .form-contacts
   &--contacts {
     padding : 0;

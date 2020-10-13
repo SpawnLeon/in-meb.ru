@@ -30,6 +30,7 @@
 
 .item-review-page {
   // .item-review-page__inner
+  align-items   : flex-start;
   margin-bottom : 20px;
 
   &__inner {
@@ -43,11 +44,11 @@
 
   // .item-review-page__text
   &__text {
-    padding       : 75px 30px 75px 85px;
-    border-radius : 5px;
+    padding             : 75px 30px 75px 85px;
+    border-radius       : 5px;
     background-color    : #f8f8f8;
-    background-repeat : no-repeat;
-    background-image : url(../../img/svg/quote.svg);
+    background-image    : url(../../img/svg/quote.svg);
+    background-repeat   : no-repeat;
     background-position : 30px center;
   }
 
@@ -58,8 +59,8 @@
     font-weight : 600;
     line-height : 1.2142;
     display     : flex;
+    margin-top  : 18px;
     color       : #161616;
-    margin-top: 18px;
 
     > svg {
       flex-shrink  : 0;
@@ -79,6 +80,10 @@
   padding       : 20px 20px 25px;
   border        : 2px solid #f8f8f8;
   border-radius : 5px;
+
+  @media screen and (max-width : 767px) {
+    display : none;
+  }
 
   // .product-item-review__image
   &__image {

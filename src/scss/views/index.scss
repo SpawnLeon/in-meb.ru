@@ -46,9 +46,9 @@
 
   // .main-page__works
   &__works {
-    width         : 100vw;
-    margin-top    : 45px;
-    margin-left   : calc((100vw - #{$contentWidth}) / -2);
+    width       : 100vw;
+    margin-top  : 45px;
+    margin-left : calc((100vw - #{$contentWidth}) / -2);
 
     @media screen and (max-width : 1139px) {
       margin-left : -40px;
@@ -464,11 +464,11 @@
 
 .main-slider {
   position    : relative;
-  width   : 1360px;
+  width       : 1360px;
   margin-left : calc((1360px - #{$contentWidth} + 30px) / -2);
 
   @media screen and (max-width : 1360px) {
-    width : 100vw;
+    width       : 100vw;
     margin-left : calc((100vw - #{$contentWidth} + 30px) / -2);
   }
 
@@ -500,8 +500,9 @@
 
   // .main-slider__btn
   &__btn {
-    top        : 50%;
-    margin-top : -18px;
+    top       : 50%;
+    transform : translateY(-50%);
+
     // .main-slider__btn--prev
     &--prev {
       left          : 0;
@@ -566,6 +567,10 @@
       @media screen and (max-width : 1210px) {
         left : -35px;
       }
+      @media screen and (max-width : 767px) {
+        left          : -15px;
+        border-radius : 0 5px 5px 0;
+      }
     }
 
     // .reviews-block__btn--next
@@ -574,6 +579,10 @@
 
       @media screen and (max-width : 1210px) {
         right : -35px;
+      }
+      @media screen and (max-width : 767px) {
+        right         : -15px;
+        border-radius : 5px 0 0 5px;
       }
     }
   }
@@ -694,7 +703,7 @@
 
 
     @media screen and (max-width : 992px) {
-      flex-direction: column;
+      flex-direction : column;
     }
 
     @media screen and (max-width : 767px) {
@@ -726,9 +735,9 @@
     background    : #feb618;
 
     @media screen and (max-width : 992px) {
-      margin-top : 50px;
+      align-self  : flex-start;
+      margin-top  : 50px;
       margin-left : 0;
-      align-self: flex-start;
     }
 
   }
