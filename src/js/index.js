@@ -9,6 +9,8 @@ const jQuery = require('jquery');
 window.jQuery = $;
 const fancybox = require('@fancyapps/fancybox');
 
+const tooltipster = require('tooltipster');
+
 import Swiper from 'swiper';
 
 function showMenu() {
@@ -234,19 +236,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
           document.addEventListener('click', function(event) {
 
-            if (event.target.closest('.props-product__item') !== propsProductItem) {
+            if (event.target.closest('.props-product__item') !==
+              propsProductItem) {
               propsProductField.classList.remove('props-product__field--open');
             }
           });
-
-
           propsProductField.classList.add('props-product__field--open');
-
-
         }
 
       });
     });
+
+  if (window.innerWidth > 767) {
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-light',
+      arrow: false,
+    });
+  }
 
 });
 
