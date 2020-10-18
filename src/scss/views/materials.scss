@@ -13,6 +13,8 @@
 }
 
 .materials-block {
+  margin-bottom : 50px;
+
   // .materials-block__title
   &__title {
     font-size     : 26px;
@@ -59,6 +61,31 @@
 
     img {
       width : 100%;
+    }
+  }
+  // .materials-block__more
+  &__more {
+    font-size            : 18px;
+    font-weight          : 600;
+    line-height          : 1.2222;
+    position             : relative;
+    left                 : 100%;
+    display              : inline-flex;
+    align-items          : center;
+    margin-top           : 10px;
+    transform            : translateX(-100%);
+    color                : #161616;
+    text-decoration-line : underline;
+
+
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration : none;
+    }
+
+    svg {
+      margin-right : 10px;
     }
   }
 }

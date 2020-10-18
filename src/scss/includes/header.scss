@@ -820,6 +820,10 @@
   color         : #161616;
   border-bottom : 1px solid #f1f1f1;
 
+  &:first-child {
+    margin-top : 0;
+  }
+
   &:last-child {
     border-bottom : none;
   }
@@ -855,3 +859,7 @@
   }
 }
 
+.title-search-result {
+  z-index : 1;
+  padding: 0 20px;
+}

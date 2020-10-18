@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.main-slider__btn--prev',
       nextEl: '.main-slider__btn--next',
     },
+    autoplay: {
+      delay: 6000,
+    },
   });
 
   // products sliders
@@ -139,6 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false,
     slidesPerView: 1,
     spaceBetween: 0,
+    autoplay: {
+      delay: 6000,
+    },
     navigation: {
       prevEl: '.banner-slider__btn--prev',
       nextEl: '.banner-slider__btn--next',
