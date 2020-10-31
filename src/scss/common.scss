@@ -279,8 +279,8 @@ a {
         left : -35px;
       }
       @media screen and (max-width : 767px) {
-        left : -15px;
-        border-radius: 0 5px 5px 0;
+        left          : -15px;
+        border-radius : 0 5px 5px 0;
       }
     }
 
@@ -292,8 +292,8 @@ a {
         right : -35px;
       }
       @media screen and (max-width : 767px) {
-        right : -15px;
-        border-radius: 5px 0 0 5px;
+        right         : -15px;
+        border-radius : 5px 0 0 5px;
       }
     }
   }
@@ -385,7 +385,7 @@ a {
   display : flex;
 
   @media screen and (max-width : 1139px) {
-    display : block!important;
+    display : block !important;
   }
 }
 
@@ -434,3 +434,6 @@ a {
 }
 
 
+div[id^="wait_comp_"] {
+  display : none;
+}

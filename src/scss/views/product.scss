@@ -493,8 +493,8 @@
     display         : flex;
     align-items     : center;
     justify-content : center;
-    width           : 300px;
-    height          : 300px;
+    width           : 200px;
+    height          : 200px;
 
     > img {
       max-width  : 100%;
@@ -587,14 +587,16 @@
 
 /////////////////////////
 .tabs-product {
-  // .tabs__header
+  // .tabs-product__header
   &__header {
-    display     : flex;
-    overflow-x  : auto;
-    align-items : flex-start;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: flex-start;
+    padding-bottom: 3px;
   }
 
-  // .tabs__tab
+  // .tabs-product__tab
   &__tab {
     font-size    : 24px;
     font-weight  : bold;
@@ -604,7 +606,7 @@
     cursor       : pointer;
     color        : #161616;
 
-    // .tabs__tab.active
+    // .tabs-product__tab.active
     &.active {
 
       &::after {
@@ -623,12 +625,12 @@
 
   }
 
-  // .tabs__contents
+  // .tabs-product__contents
   &__contents {
     margin-top : 43px;
   }
 
-  // .tabs__content
+  // .tabs-product__content
   &__content {
   }
 }
